@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Placeholder headshot">
+  <rect width="400" height="400" fill="#dfe3e8"/>
+  <circle cx="200" cy="160" r="70" fill="#b8bfc8"/>
+  <path d="M70 380c10-80 70-120 130-120s120 40 130 120z" fill="#b8bfc8"/>
+  <text x="200" y="254" font-family="system-ui, sans-serif" font-size="22" text-anchor="middle" fill="#555d68">[PLACEHOLDER]</text>
+</svg>

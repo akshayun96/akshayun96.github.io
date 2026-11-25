@@ -1,0 +1,104 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { content, langs } from '../../content.js';
+
+export const getStaticPaths = () => langs.map((lang) => ({ params: { lang } }));
+
+const { lang } = Astro.params;
+const t = content[lang];
+const L = t.ui.projectLabels;
+---
+<Layout lang={lang}>
+  <section class="hero" aria-labelledby="hero-name">
+    <div>
+      <h1 id="hero-name">{t.hero.name}</h1>
+      <p class="role">{t.hero.role}</p>
+      <p class="bio">{t.hero.bio}</p>
+      <p class="actions">
+        <a class="button" href={t.cv.own} download>{t.ui.downloadCv}</a>
+        <a class="button secondary" href={t.cv.other} download>{t.ui.downloadCvOther}</a>
+      </p>
+    </div>
+    <img class="headshot" src={t.hero.headshot.src} alt={t.hero.headshot.alt} width="240" height="240" />
+  </section>
+
+  <section id="projects" aria-labelledby="projects-title">
+    <h2 id="projects-title">{t.ui.nav.projects}</h2>
+    <ul class="cards">
+      {t.projects.map((p) => (
+        <li class="card">
+          <img src={p.image.src} alt={p.image.alt} width="640" height="360" loading="lazy" />
+          <div class="card-body">
+            <h3>{p.title}</h3>
+            <dl>
+              <dt>{L.problem}</dt><dd>{p.problem}</dd>
+              <dt>{L.whatIDid}</dt><dd>{p.whatIDid}</dd>
+              <dt>{L.tools}</dt>
+              <dd><ul class="tags">{p.tools.map((tool) => <li>{tool}</li>)}</ul></dd>
+              <dt>{L.result}</dt><dd>{p.result}</dd>
+            </dl>
+            {p.detail && (
+              <a href={`/${lang}/projects/${p.slug}/`}>{t.ui.readMore}<span class="visually-hidden">: {p.title}</span> →</a>
+            )}
+          </div>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section id="experience" aria-labelledby="experience-title">
+    <h2 id="experience-title">{t.ui.nav.experience}</h2>
+    <ol class="timeline">
+      {t.experience.map((job) => (
+        <li>
+          <p class="dates">{job.start} – {job.end ?? t.ui.present}</p>
+          <h3>{job.role}</h3>
+          <p class="muted">{job.company} · {job.location}</p>
+          <ul>{job.points.map((pt) => <li>{pt}</li>)}</ul>
+        </li>
+      ))}
+    </ol>
+  </section>
+
+  <section id="education" aria-labelledby="education-title">
+    <h2 id="education-title">{t.ui.nav.education}</h2>
+    <ol class="timeline">
+      {t.education.map((e) => (
+        <li>
+          <p class="dates">{e.start} – {e.end ?? t.ui.present}</p>
+          <h3>{e.degree}</h3>
+          <p class="muted">{e.school} · {e.location}</p>
+          {e.note && <p>{e.note}</p>}
+        </li>
+      ))}
+    </ol>
+  </section>
+
+  <section id="skills" aria-labelledby="skills-title">
+    <h2 id="skills-title">{t.ui.nav.skills}</h2>
+    <div class="skills">
+      {t.skills.map((s) => (
+        <div>
+          <h3>{s.group}</h3>
+          <ul class="tags">{s.items.map((i) => <li>{i}</li>)}</ul>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section id="contact" aria-labelledby="contact-title">
+    <h2 id="contact-title">{t.ui.nav.contact}</h2>
+    <p>{t.ui.contactIntro}</p>
+    <ul class="contact">
+      <li><span class="muted">{t.ui.emailLabel}</span> <a href={`mailto:${t.contact.email}`}>{t.contact.email}</a></li>
+      <li><span class="muted">{t.ui.linkedinLabel}</span> <a href={t.contact.linkedin} rel="noopener">{t.contact.linkedin.replace(/^https?:\/\/(www\.)?/, '')}</a></li>
+      {t.contact.github && (
+        <li><span class="muted">{t.ui.githubLabel}</span> <a href={t.contact.github} rel="noopener">{t.contact.github.replace(/^https?:\/\//, '')}</a></li>
+      )}
+    </ul>
+    <p class="actions">
+      <a class="button" href={t.cv.own} download>{t.ui.downloadCv}</a>
+      <a class="button secondary" href={t.cv.other} download>{t.ui.downloadCvOther}</a>
+    </p>
+  </section>
+</Layout>

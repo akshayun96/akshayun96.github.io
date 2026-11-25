@@ -1,0 +1,142 @@
+{
+  "meta": {
+    "lang": "en",
+    "title": "[PLACEHOLDER] Your Name – Portfolio",
+    "description": "[PLACEHOLDER] One sentence describing you and the role you are looking for."
+  },
+  "ui": {
+    "skipToContent": "Skip to content",
+    "nav": {
+      "projects": "Projects",
+      "experience": "Experience",
+      "education": "Education",
+      "skills": "Skills",
+      "contact": "Contact"
+    },
+    "switchLanguage": "Deutsch",
+    "switchLanguageLabel": "Diese Seite auf Deutsch",
+    "downloadCv": "Download CV (English)",
+    "downloadCvOther": "Lebenslauf (Deutsch)",
+    "projectLabels": {
+      "problem": "Problem",
+      "whatIDid": "What I did",
+      "tools": "Tools",
+      "result": "Result"
+    },
+    "readMore": "Read more",
+    "backToProjects": "Back to projects",
+    "legal": "Legal notice",
+    "present": "present",
+    "contactIntro": "[PLACEHOLDER] One line inviting recruiters to get in touch.",
+    "emailLabel": "Email",
+    "linkedinLabel": "LinkedIn",
+    "githubLabel": "GitHub"
+  },
+  "hero": {
+    "name": "[PLACEHOLDER] Your Name",
+    "role": "[PLACEHOLDER] Target role, e.g. the job title you apply for",
+    "bio": "[PLACEHOLDER] Two or three sentences about you: your field, what you are good at, and what you are looking for in Germany.",
+    "headshot": {
+      "src": "/images/headshot-placeholder.svg",
+      "alt": "[PLACEHOLDER] Portrait photo of Your Name"
+    }
+  },
+  "projects": [
+    {
+      "slug": "project-1",
+      "title": "[PLACEHOLDER] Project 1 title",
+      "problem": "[PLACEHOLDER] What problem did this project solve?",
+      "whatIDid": "[PLACEHOLDER] Your own contribution.",
+      "tools": ["[PLACEHOLDER] Tool A", "[PLACEHOLDER] Tool B"],
+      "result": "[PLACEHOLDER] Measurable outcome, only real figures.",
+      "image": {
+        "src": "/images/project-placeholder.svg",
+        "alt": "[PLACEHOLDER] Description of the project image"
+      },
+      "detail": [
+        "[PLACEHOLDER] Optional longer write-up, one paragraph per array item. Set \"detail\" to null to hide the detail page."
+      ]
+    },
+    {
+      "slug": "project-2",
+      "title": "[PLACEHOLDER] Project 2 title",
+      "problem": "[PLACEHOLDER] What problem did this project solve?",
+      "whatIDid": "[PLACEHOLDER] Your own contribution.",
+      "tools": ["[PLACEHOLDER] Tool A", "[PLACEHOLDER] Tool B"],
+      "result": "[PLACEHOLDER] Measurable outcome, only real figures.",
+      "image": {
+        "src": "/images/project-placeholder.svg",
+        "alt": "[PLACEHOLDER] Description of the project image"
+      },
+      "detail": null
+    },
+    {
+      "slug": "project-3",
+      "title": "[PLACEHOLDER] Project 3 title",
+      "problem": "[PLACEHOLDER] What problem did this project solve?",
+      "whatIDid": "[PLACEHOLDER] Your own contribution.",
+      "tools": ["[PLACEHOLDER] Tool A", "[PLACEHOLDER] Tool B"],
+      "result": "[PLACEHOLDER] Measurable outcome, only real figures.",
+      "image": {
+        "src": "/images/project-placeholder.svg",
+        "alt": "[PLACEHOLDER] Description of the project image"
+      },
+      "detail": null
+    }
+  ],
+  "experience": [
+    {
+      "role": "[PLACEHOLDER] Job title",
+      "company": "[PLACEHOLDER] Company",
+      "location": "[PLACEHOLDER] City, Country",
+      "start": "[PLACEHOLDER] MM/YYYY",
+      "end": null,
+      "points": [
+        "[PLACEHOLDER] Responsibility or achievement",
+        "[PLACEHOLDER] Responsibility or achievement"
+      ]
+    },
+    {
+      "role": "[PLACEHOLDER] Job title",
+      "company": "[PLACEHOLDER] Company",
+      "location": "[PLACEHOLDER] City, Country",
+      "start": "[PLACEHOLDER] MM/YYYY",
+      "end": "[PLACEHOLDER] MM/YYYY",
+      "points": ["[PLACEHOLDER] Responsibility or achievement"]
+    }
+  ],
+  "education": [
+    {
+      "degree": "[PLACEHOLDER] Degree and subject",
+      "school": "[PLACEHOLDER] University",
+      "location": "[PLACEHOLDER] City, Country",
+      "start": "[PLACEHOLDER] YYYY",
+      "end": "[PLACEHOLDER] YYYY",
+      "note": "[PLACEHOLDER] Optional: thesis topic, grade, recognition in Germany (anabin/ZAB)"
+    }
+  ],
+  "skills": [
+    { "group": "[PLACEHOLDER] Technical", "items": ["[PLACEHOLDER] Skill", "[PLACEHOLDER] Skill"] },
+    { "group": "[PLACEHOLDER] Software", "items": ["[PLACEHOLDER] Skill", "[PLACEHOLDER] Skill"] },
+    { "group": "[PLACEHOLDER] Languages", "items": ["[PLACEHOLDER] English (level)", "[PLACEHOLDER] German (level)"] }
+  ],
+  "contact": {
+    "email": "placeholder@example.com",
+    "linkedin": "https://www.linkedin.com/in/PLACEHOLDER/",
+    "github": "https://github.com/PLACEHOLDER"
+  },
+  "cv": {
+    "own": "/cv/CV_EN.pdf",
+    "other": "/cv/CV_DE.pdf"
+  },
+  "legal": {
+    "title": "Legal notice",
+    "responsible": "Responsible for the content of this website:",
+    "name": "[PLACEHOLDER] Your Name",
+    "email": "placeholder@example.com",
+    "body": [
+      "This is a private, non-commercial portfolio website.",
+      "This website does not use cookies, analytics or third-party services. The hosting provider (GitHub Pages) may process technical data such as IP addresses in its server logs; see the GitHub Privacy Statement."
+    ]
+  }
+}

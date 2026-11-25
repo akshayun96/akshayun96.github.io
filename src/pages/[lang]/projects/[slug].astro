@@ -1,0 +1,30 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { content, langs } from '../../../content.js';
+
+// A detail page is generated only for projects whose "detail" is not null.
+export const getStaticPaths = () =>
+  langs.flatMap((lang) =>
+    content[lang].projects.filter((p) => p.detail).map((p) => ({ params: { lang, slug: p.slug }, props: { p } })),
+  );
+
+const { lang } = Astro.params;
+const { p } = Astro.props;
+const t = content[lang];
+const L = t.ui.projectLabels;
+---
+<Layout lang={lang} title={`${p.title} – ${t.hero.name}`} path={`projects/${p.slug}/`}>
+  <article class="detail">
+    <p><a href={`/${lang}/#projects`}>← {t.ui.backToProjects}</a></p>
+    <h1>{p.title}</h1>
+    <img src={p.image.src} alt={p.image.alt} width="640" height="360" />
+    <dl>
+      <dt>{L.problem}</dt><dd>{p.problem}</dd>
+      <dt>{L.whatIDid}</dt><dd>{p.whatIDid}</dd>
+      <dt>{L.tools}</dt>
+      <dd><ul class="tags">{p.tools.map((tool) => <li>{tool}</li>)}</ul></dd>
+      <dt>{L.result}</dt><dd>{p.result}</dd>
+    </dl>
+    {p.detail.map((para) => <p>{para}</p>)}
+  </article>
+</Layout>

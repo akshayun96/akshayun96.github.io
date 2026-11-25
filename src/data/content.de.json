@@ -1,0 +1,142 @@
+{
+  "meta": {
+    "lang": "de",
+    "title": "[PLATZHALTER] Ihr Name – Portfolio",
+    "description": "[PLATZHALTER] Ein Satz über Sie und die gesuchte Stelle."
+  },
+  "ui": {
+    "skipToContent": "Zum Inhalt springen",
+    "nav": {
+      "projects": "Projekte",
+      "experience": "Berufserfahrung",
+      "education": "Ausbildung",
+      "skills": "Kenntnisse",
+      "contact": "Kontakt"
+    },
+    "switchLanguage": "English",
+    "switchLanguageLabel": "This page in English",
+    "downloadCv": "Lebenslauf herunterladen (Deutsch)",
+    "downloadCvOther": "CV (English)",
+    "projectLabels": {
+      "problem": "Problem",
+      "whatIDid": "Mein Beitrag",
+      "tools": "Werkzeuge",
+      "result": "Ergebnis"
+    },
+    "readMore": "Mehr erfahren",
+    "backToProjects": "Zurück zu den Projekten",
+    "legal": "Impressum",
+    "present": "heute",
+    "contactIntro": "[PLATZHALTER] Eine Zeile, die Recruiter zur Kontaktaufnahme einlädt.",
+    "emailLabel": "E-Mail",
+    "linkedinLabel": "LinkedIn",
+    "githubLabel": "GitHub"
+  },
+  "hero": {
+    "name": "[PLATZHALTER] Ihr Name",
+    "role": "[PLATZHALTER] Zielposition, z. B. die Stellenbezeichnung",
+    "bio": "[PLATZHALTER] Zwei bis drei Sätze über Sie: Fachgebiet, Stärken und was Sie in Deutschland suchen.",
+    "headshot": {
+      "src": "/images/headshot-placeholder.svg",
+      "alt": "[PLATZHALTER] Porträtfoto von Ihr Name"
+    }
+  },
+  "projects": [
+    {
+      "slug": "project-1",
+      "title": "[PLATZHALTER] Titel Projekt 1",
+      "problem": "[PLATZHALTER] Welches Problem hat das Projekt gelöst?",
+      "whatIDid": "[PLATZHALTER] Ihr eigener Beitrag.",
+      "tools": ["[PLATZHALTER] Werkzeug A", "[PLATZHALTER] Werkzeug B"],
+      "result": "[PLATZHALTER] Messbares Ergebnis, nur echte Zahlen.",
+      "image": {
+        "src": "/images/project-placeholder.svg",
+        "alt": "[PLATZHALTER] Beschreibung des Projektbilds"
+      },
+      "detail": [
+        "[PLATZHALTER] Optionale ausführliche Beschreibung, ein Absatz pro Eintrag. \"detail\" auf null setzen, um die Detailseite auszublenden."
+      ]
+    },
+    {
+      "slug": "project-2",
+      "title": "[PLATZHALTER] Titel Projekt 2",
+      "problem": "[PLATZHALTER] Welches Problem hat das Projekt gelöst?",
+      "whatIDid": "[PLATZHALTER] Ihr eigener Beitrag.",
+      "tools": ["[PLATZHALTER] Werkzeug A", "[PLATZHALTER] Werkzeug B"],
+      "result": "[PLATZHALTER] Messbares Ergebnis, nur echte Zahlen.",
+      "image": {
+        "src": "/images/project-placeholder.svg",
+        "alt": "[PLATZHALTER] Beschreibung des Projektbilds"
+      },
+      "detail": null
+    },
+    {
+      "slug": "project-3",
+      "title": "[PLATZHALTER] Titel Projekt 3",
+      "problem": "[PLATZHALTER] Welches Problem hat das Projekt gelöst?",
+      "whatIDid": "[PLATZHALTER] Ihr eigener Beitrag.",
+      "tools": ["[PLATZHALTER] Werkzeug A", "[PLATZHALTER] Werkzeug B"],
+      "result": "[PLATZHALTER] Messbares Ergebnis, nur echte Zahlen.",
+      "image": {
+        "src": "/images/project-placeholder.svg",
+        "alt": "[PLATZHALTER] Beschreibung des Projektbilds"
+      },
+      "detail": null
+    }
+  ],
+  "experience": [
+    {
+      "role": "[PLATZHALTER] Position",
+      "company": "[PLATZHALTER] Unternehmen",
+      "location": "[PLATZHALTER] Stadt, Land",
+      "start": "[PLATZHALTER] MM/JJJJ",
+      "end": null,
+      "points": [
+        "[PLATZHALTER] Aufgabe oder Erfolg",
+        "[PLATZHALTER] Aufgabe oder Erfolg"
+      ]
+    },
+    {
+      "role": "[PLATZHALTER] Position",
+      "company": "[PLATZHALTER] Unternehmen",
+      "location": "[PLATZHALTER] Stadt, Land",
+      "start": "[PLATZHALTER] MM/JJJJ",
+      "end": "[PLATZHALTER] MM/JJJJ",
+      "points": ["[PLATZHALTER] Aufgabe oder Erfolg"]
+    }
+  ],
+  "education": [
+    {
+      "degree": "[PLATZHALTER] Abschluss und Fach",
+      "school": "[PLATZHALTER] Hochschule",
+      "location": "[PLATZHALTER] Stadt, Land",
+      "start": "[PLATZHALTER] JJJJ",
+      "end": "[PLATZHALTER] JJJJ",
+      "note": "[PLATZHALTER] Optional: Abschlussarbeit, Note, Anerkennung in Deutschland (anabin/ZAB)"
+    }
+  ],
+  "skills": [
+    { "group": "[PLATZHALTER] Fachlich", "items": ["[PLATZHALTER] Kenntnis", "[PLATZHALTER] Kenntnis"] },
+    { "group": "[PLATZHALTER] Software", "items": ["[PLATZHALTER] Kenntnis", "[PLATZHALTER] Kenntnis"] },
+    { "group": "[PLATZHALTER] Sprachen", "items": ["[PLATZHALTER] Englisch (Niveau)", "[PLATZHALTER] Deutsch (Niveau)"] }
+  ],
+  "contact": {
+    "email": "placeholder@example.com",
+    "linkedin": "https://www.linkedin.com/in/PLACEHOLDER/",
+    "github": "https://github.com/PLACEHOLDER"
+  },
+  "cv": {
+    "own": "/cv/CV_DE.pdf",
+    "other": "/cv/CV_EN.pdf"
+  },
+  "legal": {
+    "title": "Impressum",
+    "responsible": "Verantwortlich für den Inhalt dieser Website:",
+    "name": "[PLATZHALTER] Ihr Name",
+    "email": "placeholder@example.com",
+    "body": [
+      "Dies ist eine private, nicht kommerzielle Portfolio-Website.",
+      "Diese Website verwendet keine Cookies, keine Analyse-Werkzeuge und keine Dienste Dritter. Der Hosting-Anbieter (GitHub Pages) kann technische Daten wie IP-Adressen in Server-Logs verarbeiten; siehe die GitHub-Datenschutzerklärung."
+    ]
+  }
+}

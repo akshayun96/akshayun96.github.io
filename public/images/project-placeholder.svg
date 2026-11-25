@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Placeholder project image">
+  <rect width="640" height="360" fill="#dfe3e8"/>
+  <path d="M0 0L640 360M640 0L0 360" stroke="#c6ccd4" stroke-width="2"/>
+  <rect x="170" y="150" width="300" height="60" rx="8" fill="#dfe3e8"/>
+  <text x="320" y="190" font-family="system-ui, sans-serif" font-size="28" text-anchor="middle" fill="#555d68">[PLACEHOLDER] 16:9</text>
+</svg>

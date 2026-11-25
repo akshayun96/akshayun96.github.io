@@ -1,0 +1,17 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { content, langs } from '../../content.js';
+
+export const getStaticPaths = () => langs.map((lang) => ({ params: { lang } }));
+
+const { lang } = Astro.params;
+const t = content[lang];
+---
+<Layout lang={lang} title={`${t.legal.title} – ${t.hero.name}`} path="impressum/">
+  <article class="detail">
+    <h1>{t.legal.title}</h1>
+    <p>{t.legal.responsible}</p>
+    <p>{t.legal.name}<br /><a href={`mailto:${t.legal.email}`}>{t.legal.email}</a></p>
+    {t.legal.body.map((para) => <p>{para}</p>)}
+  </article>
+</Layout>
