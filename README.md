@@ -45,14 +45,14 @@ Files in `public/` are served as-is from the site root.
 
 ## Publish on GitHub Pages
 
-The site is served at `https://<username>.github.io/`. For that address the repository **must** be named exactly `<username>.github.io`.
+The site is served at `https://akshayun96.github.io/`. For that address the repository **must** be named exactly `akshayun96.github.io`.
 
-1. In `astro.config.mjs`, replace `GITHUB_USERNAME` with your GitHub username.
-2. On GitHub, create a new repository named `<username>.github.io` (Public, no README, no .gitignore, no licence, so it is empty). Note: on a free account, GitHub Pages needs a public repository, so everything in this folder becomes public. Never copy private files (e.g. your job-applications folder) in here.
+1. `astro.config.mjs` already has `site` set to `https://akshayun96.github.io` (change it there if your username changes).
+2. On GitHub, create a new repository named `akshayun96.github.io` (Public, no README, no .gitignore, no licence, so it is empty). Note: on a free account, GitHub Pages needs a public repository, so everything in this folder becomes public. Never copy private files (e.g. your job-applications folder) in here.
 3. Push this folder:
 
    ```powershell
-   git remote add origin https://github.com/<username>/<username>.github.io.git
+   git remote add origin https://github.com/akshayun96/akshayun96.github.io.git
    ```
 
    ```powershell
@@ -64,6 +64,6 @@ The site is served at `https://<username>.github.io/`. For that address the repo
    ```
 
 4. In the repository: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
-5. Open the **Actions** tab. The "Deploy to GitHub Pages" workflow runs on every push to `main` (re-run it once if the first run started before step 4). After it finishes, the site is live at `https://<username>.github.io/`.
+5. Open the **Actions** tab. The "Deploy to GitHub Pages" workflow runs on every push to `main` (re-run it once if the first run started before step 4). After it finishes, the site is live at `https://akshayun96.github.io/`.
 
 Every later `git push` to `main` redeploys the site automatically (`.github/workflows/deploy.yml`, using the official `withastro/action`).
