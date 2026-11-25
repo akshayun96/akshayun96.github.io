@@ -81,8 +81,8 @@
       "slug": "hydrogen-ex-zone",
       "title": "Explosion-protection zone for a hydrogen vent line (internship, FEST GmbH)",
       "problem": "The Ex-zone around the vent line of a PEM electrolysis plant had been estimated too large.",
-      "whatIDid": "I simulated the hydrogen release from the vent line for several wind cases with FDS and OpenFOAM.",
-      "tools": ["FDS", "Smokeview", "OpenFOAM"],
+      "whatIDid": "I simulated the hydrogen release from the vent line for several wind cases with FDS and Fluent and evaluated the results in Smokeview.",
+      "tools": ["FDS (Fire Dynamics Simulator)", "Smokeview", "ANSYS Fluent"],
       "result": "A simulation-based Ex-zone that replaced the previously overestimated zone.",
       "publication": null,
       "images": [
@@ -197,7 +197,7 @@
   ],
   "skills": [
     { "group": "Process engineering", "items": ["Process optimization", "Process simulation", "Process safety", "CO2 emission reduction", "Drying technology", "Microwave drying", "Thermal processes", "Process control", "Heat exchangers"] },
-    { "group": "Simulation & CFD", "items": ["OpenFOAM (advanced)", "ANSYS CFX (good)", "Star-CCM+ (good)", "COMSOL Multiphysics (good)", "ParaView (good)", "Salome (basic)"] },
+    { "group": "Simulation & CFD", "items": ["OpenFOAM (advanced)", "ANSYS CFX (good)", "ANSYS Fluent (basic)", "Star-CCM+ (good)", "COMSOL Multiphysics (good)", "ParaView (good)", "Salome (basic)"] },
     { "group": "CAD", "items": ["SolidWorks (good)", "AutoCAD (good)", "Solid Edge (basic)"] },
     { "group": "Programming", "items": ["MATLAB (good)", "VBA Excel (good)", "Python (basic)", "C (basic)"] },
     { "group": "Methods", "items": ["Project management", "Lean Six Sigma", "Microsoft Office (advanced)"] },

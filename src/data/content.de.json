@@ -81,8 +81,8 @@
       "slug": "hydrogen-ex-zone",
       "title": "Ex-Zone für eine Wasserstoff-Ausblaseleitung (Praktikum, FEST GmbH)",
       "problem": "Die Ex-Zone um die Ausblaseleitung einer PEM-Elektrolyseanlage war zuvor überschätzt worden.",
-      "whatIDid": "Ich habe die Wasserstofffreisetzung aus der Ausblaseleitung für mehrere Windgeschwindigkeiten mit FDS und OpenFOAM simuliert.",
-      "tools": ["FDS", "Smokeview", "OpenFOAM"],
+      "whatIDid": "Ich habe die Wasserstofffreisetzung aus der Ausblaseleitung für mehrere Windgeschwindigkeiten mit FDS und Fluent simuliert und die Ergebnisse in Smokeview ausgewertet.",
+      "tools": ["FDS (Fire Dynamics Simulator)", "Smokeview", "ANSYS Fluent"],
       "result": "Eine simulationsgestützte Ex-Zone anstelle der zuvor überschätzten Zone.",
       "publication": null,
       "images": [
@@ -197,7 +197,7 @@
   ],
   "skills": [
     { "group": "Verfahrenstechnik", "items": ["Prozessoptimierung", "Prozesssimulation", "Prozesssicherheit", "CO2-Emissionsminderung", "Trocknungstechnik", "Mikrowellentrocknung", "Thermische Verfahren", "Prozessführung", "Wärmeübertrager"] },
-    { "group": "Simulation & CFD", "items": ["OpenFOAM (sehr gut)", "ANSYS CFX (gut)", "Star-CCM+ (gut)", "COMSOL Multiphysics (gut)", "ParaView (gut)", "Salome (Grundkenntnisse)"] },
+    { "group": "Simulation & CFD", "items": ["OpenFOAM (sehr gut)", "ANSYS CFX (gut)", "ANSYS Fluent (Grundkenntnisse)", "Star-CCM+ (gut)", "COMSOL Multiphysics (gut)", "ParaView (gut)", "Salome (Grundkenntnisse)"] },
     { "group": "CAD", "items": ["SolidWorks (gut)", "AutoCAD (gut)", "Solid Edge (Grundkenntnisse)"] },
     { "group": "Programmierung", "items": ["MATLAB (gut)", "VBA Excel (gut)", "Python (Grundkenntnisse)", "C (Grundkenntnisse)"] },
     { "group": "Methoden", "items": ["Projektmanagement", "Lean Six Sigma", "Microsoft Office (sehr gut)"] },
