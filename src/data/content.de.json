@@ -1,8 +1,8 @@
 {
   "meta": {
     "lang": "de",
-    "title": "[PLATZHALTER] Ihr Name – Portfolio",
-    "description": "[PLATZHALTER] Ein Satz über Sie und die gesuchte Stelle."
+    "title": "Akshay Ujjani Narasimhaiah – Verfahrensingenieur",
+    "description": "Verfahrensingenieur in Magdeburg, Deutschland: Prozessoptimierung, thermische Verfahren und CFD."
   },
   "ui": {
     "skipToContent": "Zum Inhalt springen",
@@ -21,119 +21,206 @@
       "problem": "Problem",
       "whatIDid": "Mein Beitrag",
       "tools": "Werkzeuge",
-      "result": "Ergebnis"
+      "result": "Ergebnis",
+      "publication": "Publikation"
     },
+    "smallProjectsTitle": "Weitere Studienprojekte",
+    "certificatesTitle": "Zertifikate",
     "readMore": "Mehr erfahren",
     "backToProjects": "Zurück zu den Projekten",
     "legal": "Impressum",
     "present": "heute",
-    "contactIntro": "[PLATZHALTER] Eine Zeile, die Recruiter zur Kontaktaufnahme einlädt.",
+    "contactIntro": "Sie erreichen mich per E-Mail oder über LinkedIn.",
     "emailLabel": "E-Mail",
     "linkedinLabel": "LinkedIn",
     "githubLabel": "GitHub"
   },
   "hero": {
-    "name": "[PLATZHALTER] Ihr Name",
-    "role": "[PLATZHALTER] Zielposition, z. B. die Stellenbezeichnung",
-    "bio": "[PLATZHALTER] Zwei bis drei Sätze über Sie: Fachgebiet, Stärken und was Sie in Deutschland suchen.",
+    "name": "Akshay Ujjani Narasimhaiah",
+    "role": "Verfahrensingenieur: Prozessoptimierung, thermische Verfahren und CFD",
+    "location": "Magdeburg, Deutschland",
+    "bio": "Ich bin Verfahrensingenieur in Magdeburg. Zwei Jahre lang habe ich in einem Dachziegelwerk Tunnelöfen, Trocknungsanlagen und Dampferzeuger betreut. Danach habe ich zwei Jahre an der Otto-von-Guericke-Universität Magdeburg untersucht, wie die Prozessführung den Energiebedarf von Mikrowellentrocknern beeinflusst. Mit OpenFOAM und COMSOL erstelle ich Simulationsmodelle für praktische Fragen aus dem Anlagenbetrieb: Energiebedarf, Sicherheit und Durchsatz. Ich suche eine Stelle in der Verfahrenstechnik, im Anlagenbau oder in der Simulation in Deutschland.",
     "headshot": {
-      "src": "/images/headshot-placeholder.svg",
-      "alt": "[PLATZHALTER] Porträtfoto von Ihr Name"
+      "src": "/images/headshot.jpg",
+      "alt": "Porträt von Akshay Ujjani Narasimhaiah"
     }
   },
   "projects": [
     {
-      "slug": "project-1",
-      "title": "[PLATZHALTER] Titel Projekt 1",
-      "problem": "[PLATZHALTER] Welches Problem hat das Projekt gelöst?",
-      "whatIDid": "[PLATZHALTER] Ihr eigener Beitrag.",
-      "tools": ["[PLATZHALTER] Werkzeug A", "[PLATZHALTER] Werkzeug B"],
-      "result": "[PLATZHALTER] Messbares Ergebnis, nur echte Zahlen.",
-      "image": {
-        "src": "/images/project-placeholder.svg",
-        "alt": "[PLATZHALTER] Beschreibung des Projektbilds"
+      "slug": "microwave-drying",
+      "title": "Mikrowellentrocknung von Dachziegeln (Forschungsprojekt, OVGU)",
+      "problem": "Gasbefeuerte Konvektionstrockner haben einen hohen Energiebedarf. Mikrowellentrocknung hat das Potenzial, den Energiebedarf um 50 % und die Durchlaufzeit um 75 % zu senken. Wie viel davon erreicht wird, hängt von der Prozessführung ab.",
+      "whatIDid": "Im BMWK-geförderten IGF-Projekt habe ich das Versuchsprogramm für Dachziegel geplant und durchgeführt und den Trockner mittels Impedanzanpassung, Reflexionsmessung und Energiebilanzen charakterisiert. Ich habe das Trocknungsmodell erstellt, elektromagnetische und thermische 3D-Simulationen der gesamten Trocknungskammer in COMSOL Multiphysics aufgebaut und die technische Modernisierung des Labortrockners in Abstimmung mit dem Projektpartner MFPA Weimar koordiniert.",
+      "tools": ["COMSOL Multiphysics", "Energiebilanzen", "Labormesstechnik"],
+      "result": "Projektbericht, Ergebnisse auf drei Konferenzen (1 national, 2 international) und in einer Publikation.",
+      "publication": {
+        "text": "Kurzfassung im Book of Abstracts des 2nd International Workshop on Particle-Gas Systems (CRC 2025)",
+        "url": "http://dx.doi.org/10.25673/118928"
       },
-      "detail": [
-        "[PLATZHALTER] Optionale ausführliche Beschreibung, ein Absatz pro Eintrag. \"detail\" auf null setzen, um die Detailseite auszublenden."
-      ]
+      "images": [
+        { "src": "/images/microwave-dryer.png", "alt": "Schema des Labor-Mikrowellentrockners: Trocknungskammer mit Drehteller, Probe und Abmessungen" },
+        { "src": "/images/roof-tile-sample.jpg", "alt": "Dachziegelprobe auf dem Drehteller des Trockners mit faseroptischen Temperatursensoren" }
+      ],
+      "detailPage": true
     },
     {
-      "slug": "project-2",
-      "title": "[PLATZHALTER] Titel Projekt 2",
-      "problem": "[PLATZHALTER] Welches Problem hat das Projekt gelöst?",
-      "whatIDid": "[PLATZHALTER] Ihr eigener Beitrag.",
-      "tools": ["[PLATZHALTER] Werkzeug A", "[PLATZHALTER] Werkzeug B"],
-      "result": "[PLATZHALTER] Messbares Ergebnis, nur echte Zahlen.",
-      "image": {
-        "src": "/images/project-placeholder.svg",
-        "alt": "[PLATZHALTER] Beschreibung des Projektbilds"
-      },
-      "detail": null
+      "slug": "pem-separator",
+      "title": "Anodenwasserabscheider für die PEM-Elektrolyse (Masterarbeit, FEST GmbH)",
+      "problem": "Modulare PEM-Elektrolysesysteme brauchen einen Abscheider, der Sauerstoff und Wasser am Anodenaustritt zuverlässig trennt, bei möglichst kompakter Bauform.",
+      "whatIDid": "Ich habe ein CFD-Modell der Zweiphasentrennung im Anodenwasserabscheider implementiert und verschiedene Prallblech-Konfigurationen und Betriebsdrücke verglichen.",
+      "tools": ["OpenFOAM (twoPhaseEulerFoam, Euler-Euler-Modell)", "SALOME", "snappyHexMesh", "ParaView"],
+      "result": "Ermittlung der optimalen Prallblech-Konfiguration und des Betriebsdrucks sowie des Einflusses der Behälterlänge auf die Trennleistung. Die Ergebnisse flossen in Optimierung und Scale-up des Abscheiders ein.",
+      "publication": null,
+      "images": [
+        { "src": "/images/separator-mesh.png", "alt": "Rechengitter des liegenden Abscheiderbehälters mit Ein- und Auslassstutzen" },
+        { "src": "/images/separator-streamlines.png", "alt": "Simulierte Sauerstoff-Stromlinien im Abscheiderbehälter" }
+      ],
+      "detailPage": true
     },
     {
-      "slug": "project-3",
-      "title": "[PLATZHALTER] Titel Projekt 3",
-      "problem": "[PLATZHALTER] Welches Problem hat das Projekt gelöst?",
-      "whatIDid": "[PLATZHALTER] Ihr eigener Beitrag.",
-      "tools": ["[PLATZHALTER] Werkzeug A", "[PLATZHALTER] Werkzeug B"],
-      "result": "[PLATZHALTER] Messbares Ergebnis, nur echte Zahlen.",
-      "image": {
-        "src": "/images/project-placeholder.svg",
-        "alt": "[PLATZHALTER] Beschreibung des Projektbilds"
-      },
-      "detail": null
+      "slug": "hydrogen-ex-zone",
+      "title": "Ex-Zone für eine Wasserstoff-Ausblaseleitung (Praktikum, FEST GmbH)",
+      "problem": "Die Ex-Zone um die Ausblaseleitung einer PEM-Elektrolyseanlage war zuvor überschätzt worden.",
+      "whatIDid": "Ich habe die Wasserstofffreisetzung aus der Ausblaseleitung für mehrere Windgeschwindigkeiten mit FDS und OpenFOAM simuliert.",
+      "tools": ["FDS", "Smokeview", "OpenFOAM"],
+      "result": "Eine simulationsgestützte Ex-Zone anstelle der zuvor überschätzten Zone.",
+      "publication": null,
+      "images": [
+        { "src": "/images/hydrogen-plume.png", "alt": "FDS-Simulation der aus der Ausblaseleitung aufsteigenden Wasserstofffahne" },
+        { "src": "/images/ex-zone-domain.png", "alt": "Simulationsgebiet mit Ausblaseöffnung, im Bereich der Freisetzung feiner vernetzt" }
+      ],
+      "detailPage": true
+    },
+    {
+      "slug": "bosch-cycle-time",
+      "title": "Kürzere Bearbeitungszeit für Förderpumpen-Gleitstößel (Bosch Limited)",
+      "problem": "Die Endbearbeitung der Förderpumpen-Gleitstößel brauchte zwei Bearbeitungsschritte und begrenzte die Ausbringung je Schicht.",
+      "whatIDid": "In einem studentischen Projekt zu viert bei Bosch haben wir die Schleifparameter mit der Taguchi-Methode optimiert, sodass ein Schleifschritt das Schleifen und Superfinishen ersetzte.",
+      "tools": ["Taguchi-Methode", "Bosch-Produktionssystem"],
+      "result": "Kürzere Bearbeitungszeit und höhere Ausbringung je Schicht; ein Bearbeitungsschritt und die zugehörige Maschine entfallen.",
+      "publication": null,
+      "images": [],
+      "detailPage": false
+    }
+  ],
+  "smallProjects": [
+    {
+      "title": "Freistrahl mit variabler Dichte (OpenFOAM)",
+      "text": "Simulation der Geschwindigkeits- und Massenanteilsverteilung eines Helium-Stickstoff-Freistrahls mit variabler Dichte."
+    },
+    {
+      "title": "CFD-Simulation einer Außenumströmung (Star-CCM+)",
+      "text": "Analyse der Strömungseigenschaften bei der Umströmung eines Adlers."
     }
   ],
   "experience": [
     {
-      "role": "[PLATZHALTER] Position",
-      "company": "[PLATZHALTER] Unternehmen",
-      "location": "[PLATZHALTER] Stadt, Land",
-      "start": "[PLATZHALTER] MM/JJJJ",
-      "end": null,
-      "points": [
-        "[PLATZHALTER] Aufgabe oder Erfolg",
-        "[PLATZHALTER] Aufgabe oder Erfolg"
-      ]
+      "role": "Wissenschaftlicher Mitarbeiter",
+      "company": "Lehrstuhl für Thermische Verfahrenstechnik, Otto-von-Guericke-Universität",
+      "location": "Magdeburg",
+      "start": "08/2024",
+      "end": "10/2026",
+      "points": ["Energiebedarf von Mikrowellentrocknern im BMWK-geförderten IGF-Projekt."]
     },
     {
-      "role": "[PLATZHALTER] Position",
-      "company": "[PLATZHALTER] Unternehmen",
-      "location": "[PLATZHALTER] Stadt, Land",
-      "start": "[PLATZHALTER] MM/JJJJ",
-      "end": "[PLATZHALTER] MM/JJJJ",
-      "points": ["[PLATZHALTER] Aufgabe oder Erfolg"]
+      "role": "Verfahrensingenieur",
+      "company": "Dachziegelwerke Nelskamp GmbH",
+      "location": "Groß Ammensleben",
+      "start": "09/2022",
+      "end": "07/2024",
+      "points": ["Betrieb von Tunnelöfen, Trocknungsanlagen und Dampferzeugern; Produktqualität +20 %, Durchlaufzeit −10 %."]
+    },
+    {
+      "role": "Masterand (Masterarbeit)",
+      "company": "FEST GmbH",
+      "location": "Goslar",
+      "start": "01/2022",
+      "end": "08/2022",
+      "points": ["CFD-Modell eines Anodenwasserabscheiders für die PEM-Elektrolyse."]
+    },
+    {
+      "role": "Praktikant Verfahrenstechnik",
+      "company": "FEST GmbH",
+      "location": "Goslar",
+      "start": "11/2021",
+      "end": "12/2021",
+      "points": ["Simulation der Wasserstofffreisetzung zur Festlegung der Ex-Zonen."]
+    },
+    {
+      "role": "Studentische Hilfskraft",
+      "company": "Institut für Strömungstechnik und Thermodynamik, OVGU",
+      "location": "Magdeburg",
+      "start": "07/2021",
+      "end": "09/2021",
+      "points": ["Validierung von CFD-Ergebnissen mit Versuchsdaten einer Miniplant."]
+    },
+    {
+      "role": "Ingenieur-Trainee",
+      "company": "Abhiyanta Inc.",
+      "location": "Bengaluru, Indien",
+      "start": "07/2018",
+      "end": "03/2019",
+      "points": ["3D- und 2D-CAD-Konstruktion von Apparaten und OEM-Sondermaschinen (AutoCAD, SolidWorks)."]
+    },
+    {
+      "role": "Projektpraktikant",
+      "company": "Bosch Limited",
+      "location": "Bengaluru, Indien",
+      "start": "01/2018",
+      "end": "04/2018",
+      "points": ["Kürzere Bearbeitungszeit durch optimierte Schleifparameter."]
     }
   ],
   "education": [
     {
-      "degree": "[PLATZHALTER] Abschluss und Fach",
-      "school": "[PLATZHALTER] Hochschule",
-      "location": "[PLATZHALTER] Stadt, Land",
-      "start": "[PLATZHALTER] JJJJ",
-      "end": "[PLATZHALTER] JJJJ",
-      "note": "[PLATZHALTER] Optional: Abschlussarbeit, Note, Anerkennung in Deutschland (anabin/ZAB)"
+      "degree": "Master of Science (M.Sc.), Chemical and Energy Engineering",
+      "school": "Otto-von-Guericke-Universität Magdeburg",
+      "location": "Deutschland",
+      "start": "10/2019",
+      "end": "09/2022",
+      "notes": [
+        "Note: 2,0 (1,0 = beste Note).",
+        "Schwerpunkte: Prozesssystemtechnik, Numerische Strömungsmechanik (CFD), Numerische Simulation, Thermische Verfahrenstechnik, Anlagenplanung und Prozesssicherheit, Höhere Strömungsmechanik, Mechanische Verfahrenstechnik."
+      ]
+    },
+    {
+      "degree": "Bachelor of Engineering (B.E.), Maschinenbau",
+      "school": "Visvesvaraya Technological University",
+      "location": "Bengaluru, Indien",
+      "start": "06/2014",
+      "end": "07/2018",
+      "notes": [
+        "Note: 2,0 (modifizierte bayerische Formel).",
+        "Schwerpunkte: Regelungstechnik, Hydraulik und Pneumatik, Strömungsmechanik, Thermodynamik."
+      ]
     }
   ],
   "skills": [
-    { "group": "[PLATZHALTER] Fachlich", "items": ["[PLATZHALTER] Kenntnis", "[PLATZHALTER] Kenntnis"] },
-    { "group": "[PLATZHALTER] Software", "items": ["[PLATZHALTER] Kenntnis", "[PLATZHALTER] Kenntnis"] },
-    { "group": "[PLATZHALTER] Sprachen", "items": ["[PLATZHALTER] Englisch (Niveau)", "[PLATZHALTER] Deutsch (Niveau)"] }
+    { "group": "Verfahrenstechnik", "items": ["Prozessoptimierung", "Prozesssimulation", "Prozesssicherheit", "CO2-Emissionsminderung", "Trocknungstechnik", "Mikrowellentrocknung", "Thermische Verfahren", "Prozessführung", "Wärmeübertrager"] },
+    { "group": "Simulation & CFD", "items": ["OpenFOAM (sehr gut)", "ANSYS CFX (gut)", "Star-CCM+ (gut)", "COMSOL Multiphysics (gut)", "ParaView (gut)", "Salome (Grundkenntnisse)"] },
+    { "group": "CAD", "items": ["SolidWorks (gut)", "AutoCAD (gut)", "Solid Edge (Grundkenntnisse)"] },
+    { "group": "Programmierung", "items": ["MATLAB (gut)", "VBA Excel (gut)", "Python (Grundkenntnisse)", "C (Grundkenntnisse)"] },
+    { "group": "Methoden", "items": ["Projektmanagement", "Lean Six Sigma", "Microsoft Office (sehr gut)"] },
+    { "group": "Sprachen", "items": ["Englisch (C1)", "Deutsch (B2)", "Kannada (Muttersprache)"] }
+  ],
+  "certificates": [
+    "Six Sigma Principles (Coursera, 09/2021)",
+    "Introduction to Programming with MATLAB (Coursera, 10/2020)"
   ],
   "contact": {
-    "email": "placeholder@example.com",
-    "linkedin": "https://www.linkedin.com/in/PLACEHOLDER/",
-    "github": "https://github.com/PLACEHOLDER"
+    "email": "akshayun1996@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/akshay-ujjani-narasimhaiah-523932116",
+    "github": null
   },
   "cv": {
-    "own": "/cv/CV_DE.pdf",
-    "other": "/cv/CV_EN.pdf"
+    "own": "/cv/Akshay_Ujjani_Narasimhaiah_Lebenslauf.pdf",
+    "other": "/cv/Akshay_Ujjani_Narasimhaiah_CV.pdf"
   },
   "legal": {
     "title": "Impressum",
     "responsible": "Verantwortlich für den Inhalt dieser Website:",
-    "name": "[PLATZHALTER] Ihr Name",
-    "email": "placeholder@example.com",
+    "name": "Akshay Ujjani Narasimhaiah",
+    "email": "akshayun1996@gmail.com",
     "body": [
       "Dies ist eine private, nicht kommerzielle Portfolio-Website.",
       "Diese Website verwendet keine Cookies, keine Analyse-Werkzeuge und keine Dienste Dritter. Der Hosting-Anbieter (GitHub Pages) kann technische Daten wie IP-Adressen in Server-Logs verarbeiten; siehe die GitHub-Datenschutzerklärung."

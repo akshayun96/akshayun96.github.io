@@ -4,8 +4,6 @@ Personal portfolio website in English (`/en/`) and German (`/de/`), built with [
 
 No analytics, cookies, trackers, CDNs or external fonts, so no cookie banner is needed.
 
-All content is currently `[PLACEHOLDER]` / `[PLATZHALTER]` text. Search for `PLACEHOLDER` and `PLATZHALTER` to find everything that still needs replacing.
-
 ## Run locally
 
 Needs Node.js 22 or newer.
@@ -28,8 +26,8 @@ Change text there, not in the components. `npm run build` first runs `scripts/ch
 
 Notes:
 
-- **Projects:** 3–5 entries in `projects`. Keep `slug` identical in both files. Set `detail` to `null` for no detail page, or to a list of paragraphs to create `/en/projects/<slug>/`.
-- **Experience / education:** `end: null` shows "present" / "heute". Newest first.
+- **Projects:** 3–5 entries in `projects`. Keep `slug` identical in both files. `images` is a list (the first one is shown on the card, all of them on the detail page; an empty list gives a card without an image). Set `detailPage` to `true` to create `/en/projects/<slug>/`. `publication` is `{ "text", "url" }` or `null`. `smallProjects` are listed under the cards without images or detail pages.
+- **Experience / education:** `end: null` shows "present" / "heute". Newest first. Education `notes` is a list of short lines.
 - **Contact:** set `github` to `null` to hide it.
 - **Legal notice / Impressum:** `legal` holds your name and email. Do not add a home address or phone number here.
 - Section order and layout live in `src/pages/[lang]/index.astro`; colours (one accent, light and dark) at the top of `src/styles/global.css`.
@@ -38,10 +36,10 @@ Notes:
 
 Files in `public/` are served as-is from the site root.
 
-- **Headshot:** put a square photo (at least 480×480 px, JPG or WebP) at `public/images/headshot.jpg`, then set `hero.headshot.src` to `/images/headshot.jpg` and write a real `alt` text in both JSON files.
-- **Project images:** 16:9 images (e.g. 1280×720) in `public/images/`, then set each project's `image.src` and `image.alt`.
-- **CVs:** overwrite `public/cv/CV_EN.pdf` and `public/cv/CV_DE.pdf` with your real PDFs (keep the file names, or change `cv` in the JSON files).
-- Delete the `*-placeholder.svg` files once nothing uses them.
+- **Headshot:** `public/images/headshot.jpg` (portrait photos are cropped to a circle, focused near the top). Set its `alt` text in both JSON files.
+- **Project images:** put them in `public/images/` and list them in each project's `images` with `src` and `alt`.
+- **CVs:** overwrite `public/cv/Akshay_Ujjani_Narasimhaiah_CV.pdf` and `public/cv/Akshay_Ujjani_Narasimhaiah_Lebenslauf.pdf` with your real PDFs (keep the file names, or change `cv` in the JSON files).
+- Images can have any aspect ratio; cards show them uncropped in a 16:9 box.
 
 ## Publish on GitHub Pages
 

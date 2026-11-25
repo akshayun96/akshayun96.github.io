@@ -2,10 +2,10 @@
 import Layout from '../../../layouts/Layout.astro';
 import { content, langs } from '../../../content.js';
 
-// A detail page is generated only for projects whose "detail" is not null.
+// A detail page is generated only for projects with "detailPage": true.
 export const getStaticPaths = () =>
   langs.flatMap((lang) =>
-    content[lang].projects.filter((p) => p.detail).map((p) => ({ params: { lang, slug: p.slug }, props: { p } })),
+    content[lang].projects.filter((p) => p.detailPage).map((p) => ({ params: { lang, slug: p.slug }, props: { p } })),
   );
 
 const { lang } = Astro.params;
@@ -17,14 +17,19 @@ const L = t.ui.projectLabels;
   <article class="detail">
     <p><a href={`/${lang}/#projects`}>← {t.ui.backToProjects}</a></p>
     <h1>{p.title}</h1>
-    <img src={p.image.src} alt={p.image.alt} width="640" height="360" />
     <dl>
       <dt>{L.problem}</dt><dd>{p.problem}</dd>
       <dt>{L.whatIDid}</dt><dd>{p.whatIDid}</dd>
       <dt>{L.tools}</dt>
       <dd><ul class="tags">{p.tools.map((tool) => <li>{tool}</li>)}</ul></dd>
       <dt>{L.result}</dt><dd>{p.result}</dd>
+      {p.publication && (<><dt>{L.publication}</dt><dd><a href={p.publication.url} rel="noopener">{p.publication.text}</a></dd></>)}
     </dl>
-    {p.detail.map((para) => <p>{para}</p>)}
+    {p.images.map((img) => (
+      <figure>
+        <img src={img.src} alt={img.alt} />
+        <figcaption aria-hidden="true">{img.alt}</figcaption>
+      </figure>
+    ))}
   </article>
 </Layout>

@@ -1,8 +1,8 @@
 {
   "meta": {
     "lang": "en",
-    "title": "[PLACEHOLDER] Your Name – Portfolio",
-    "description": "[PLACEHOLDER] One sentence describing you and the role you are looking for."
+    "title": "Akshay Ujjani Narasimhaiah – Process Engineer",
+    "description": "Process Engineer in Magdeburg, Germany: process optimization, thermal processes and CFD."
   },
   "ui": {
     "skipToContent": "Skip to content",
@@ -21,119 +21,206 @@
       "problem": "Problem",
       "whatIDid": "What I did",
       "tools": "Tools",
-      "result": "Result"
+      "result": "Result",
+      "publication": "Publication"
     },
+    "smallProjectsTitle": "Smaller academic projects",
+    "certificatesTitle": "Certificates",
     "readMore": "Read more",
     "backToProjects": "Back to projects",
     "legal": "Legal notice",
     "present": "present",
-    "contactIntro": "[PLACEHOLDER] One line inviting recruiters to get in touch.",
+    "contactIntro": "Feel free to get in touch by email or on LinkedIn.",
     "emailLabel": "Email",
     "linkedinLabel": "LinkedIn",
     "githubLabel": "GitHub"
   },
   "hero": {
-    "name": "[PLACEHOLDER] Your Name",
-    "role": "[PLACEHOLDER] Target role, e.g. the job title you apply for",
-    "bio": "[PLACEHOLDER] Two or three sentences about you: your field, what you are good at, and what you are looking for in Germany.",
+    "name": "Akshay Ujjani Narasimhaiah",
+    "role": "Process Engineer: process optimization, thermal processes and CFD",
+    "location": "Magdeburg, Germany",
+    "bio": "I'm a process engineer based in Magdeburg. For two years I ran tunnel kilns, drying plants and steam generators at a roof-tile plant. After that I spent two years at Otto-von-Guericke University Magdeburg researching how process control affects the energy demand of microwave dryers. I also build simulation models in OpenFOAM and COMSOL to answer practical plant questions about energy use, safety and throughput. I'm looking for a role in process engineering, plant engineering or simulation in Germany.",
     "headshot": {
-      "src": "/images/headshot-placeholder.svg",
-      "alt": "[PLACEHOLDER] Portrait photo of Your Name"
+      "src": "/images/headshot.jpg",
+      "alt": "Portrait of Akshay Ujjani Narasimhaiah"
     }
   },
   "projects": [
     {
-      "slug": "project-1",
-      "title": "[PLACEHOLDER] Project 1 title",
-      "problem": "[PLACEHOLDER] What problem did this project solve?",
-      "whatIDid": "[PLACEHOLDER] Your own contribution.",
-      "tools": ["[PLACEHOLDER] Tool A", "[PLACEHOLDER] Tool B"],
-      "result": "[PLACEHOLDER] Measurable outcome, only real figures.",
-      "image": {
-        "src": "/images/project-placeholder.svg",
-        "alt": "[PLACEHOLDER] Description of the project image"
+      "slug": "microwave-drying",
+      "title": "Microwave drying of roof tiles (research project, OVGU)",
+      "problem": "Gas-fired convective dryers use a lot of energy. Microwave drying could cut energy use by 50% and lead time by 75%, but how the process is run decides how much of that is achieved.",
+      "whatIDid": "In a BMWK-funded IGF research project, I designed and ran the test plan for roof tiles and characterised the microwave dryer with impedance tuning, reflected-power measurements and energy balances. I formulated the drying model, built 3D electromagnetic and thermal simulations of the whole drying chamber in COMSOL Multiphysics, and coordinated the technical upgrade of the laboratory dryer with the project partner MFPA Weimar.",
+      "tools": ["COMSOL Multiphysics", "Energy balances", "Laboratory measurement"],
+      "result": "Project report, results presented at one national and two international conferences, and one publication.",
+      "publication": {
+        "text": "Abstract in the Book of Abstracts of the 2nd International Workshop on Particle-Gas Systems (CRC 2025)",
+        "url": "http://dx.doi.org/10.25673/118928"
       },
-      "detail": [
-        "[PLACEHOLDER] Optional longer write-up, one paragraph per array item. Set \"detail\" to null to hide the detail page."
-      ]
+      "images": [
+        { "src": "/images/microwave-dryer.png", "alt": "Schematic of the laboratory microwave dryer: drying chamber with turntable, sample and dimensions" },
+        { "src": "/images/roof-tile-sample.jpg", "alt": "Roof-tile sample on the dryer turntable with fibre-optic temperature sensors" }
+      ],
+      "detailPage": true
     },
     {
-      "slug": "project-2",
-      "title": "[PLACEHOLDER] Project 2 title",
-      "problem": "[PLACEHOLDER] What problem did this project solve?",
-      "whatIDid": "[PLACEHOLDER] Your own contribution.",
-      "tools": ["[PLACEHOLDER] Tool A", "[PLACEHOLDER] Tool B"],
-      "result": "[PLACEHOLDER] Measurable outcome, only real figures.",
-      "image": {
-        "src": "/images/project-placeholder.svg",
-        "alt": "[PLACEHOLDER] Description of the project image"
-      },
-      "detail": null
+      "slug": "pem-separator",
+      "title": "Anode water separator for PEM electrolysis (master thesis, FEST GmbH)",
+      "problem": "Modular PEM electrolyzer systems need a separator vessel that reliably separates the oxygen from the water leaving the anode, in a vessel that is as compact as possible.",
+      "whatIDid": "I implemented a CFD model of the two-phase separation in the anode water separator and compared baffle-plate designs and operating pressures.",
+      "tools": ["OpenFOAM (twoPhaseEulerFoam, Euler-Euler model)", "SALOME", "snappyHexMesh", "ParaView"],
+      "result": "I found the best baffle-plate design and operating pressure, and showed how much separation efficiency depends on the vessel length. FEST used the results to optimize and scale up the separator.",
+      "publication": null,
+      "images": [
+        { "src": "/images/separator-mesh.png", "alt": "Computational mesh of the horizontal separator vessel with its inlet and outlet nozzles" },
+        { "src": "/images/separator-streamlines.png", "alt": "Simulated oxygen streamlines inside the separator vessel" }
+      ],
+      "detailPage": true
     },
     {
-      "slug": "project-3",
-      "title": "[PLACEHOLDER] Project 3 title",
-      "problem": "[PLACEHOLDER] What problem did this project solve?",
-      "whatIDid": "[PLACEHOLDER] Your own contribution.",
-      "tools": ["[PLACEHOLDER] Tool A", "[PLACEHOLDER] Tool B"],
-      "result": "[PLACEHOLDER] Measurable outcome, only real figures.",
-      "image": {
-        "src": "/images/project-placeholder.svg",
-        "alt": "[PLACEHOLDER] Description of the project image"
-      },
-      "detail": null
+      "slug": "hydrogen-ex-zone",
+      "title": "Explosion-protection zone for a hydrogen vent line (internship, FEST GmbH)",
+      "problem": "The Ex-zone around the vent line of a PEM electrolysis plant had been estimated too large.",
+      "whatIDid": "I simulated the hydrogen release from the vent line for several wind cases with FDS and OpenFOAM.",
+      "tools": ["FDS", "Smokeview", "OpenFOAM"],
+      "result": "A simulation-based Ex-zone that replaced the previously overestimated zone.",
+      "publication": null,
+      "images": [
+        { "src": "/images/hydrogen-plume.png", "alt": "FDS simulation of the hydrogen plume rising from the vent line" },
+        { "src": "/images/ex-zone-domain.png", "alt": "Simulation domain with the vent, meshed finer around the release" }
+      ],
+      "detailPage": true
+    },
+    {
+      "slug": "bosch-cycle-time",
+      "title": "Cycle-time reduction for feed pump sliding tappets (Bosch Limited)",
+      "problem": "Finishing the sliding tappets for feed pumps took two machining steps and limited the output per shift.",
+      "whatIDid": "In a four-person student project at Bosch, we optimized the grinding parameters with the Taguchi method so that one grinding step replaced grinding plus super-finishing.",
+      "tools": ["Taguchi method", "Bosch Production System"],
+      "result": "Shorter cycle time and higher output per shift, with one machining step and its machine no longer needed.",
+      "publication": null,
+      "images": [],
+      "detailPage": false
+    }
+  ],
+  "smallProjects": [
+    {
+      "title": "Free jet with variable density (OpenFOAM)",
+      "text": "Simulated the velocity and mass fraction fields of a variable-density helium-nitrogen jet."
+    },
+    {
+      "title": "External flow CFD simulation (Star-CCM+)",
+      "text": "Analysed the flow characteristics of the air flow around an eagle."
     }
   ],
   "experience": [
     {
-      "role": "[PLACEHOLDER] Job title",
-      "company": "[PLACEHOLDER] Company",
-      "location": "[PLACEHOLDER] City, Country",
-      "start": "[PLACEHOLDER] MM/YYYY",
-      "end": null,
-      "points": [
-        "[PLACEHOLDER] Responsibility or achievement",
-        "[PLACEHOLDER] Responsibility or achievement"
-      ]
+      "role": "Research Associate",
+      "company": "Chair of Thermal Process Engineering, Otto-von-Guericke University",
+      "location": "Magdeburg",
+      "start": "Aug 2024",
+      "end": "Oct 2026",
+      "points": ["Energy demand of microwave dryers in a BMWK-funded IGF research project."]
     },
     {
-      "role": "[PLACEHOLDER] Job title",
-      "company": "[PLACEHOLDER] Company",
-      "location": "[PLACEHOLDER] City, Country",
-      "start": "[PLACEHOLDER] MM/YYYY",
-      "end": "[PLACEHOLDER] MM/YYYY",
-      "points": ["[PLACEHOLDER] Responsibility or achievement"]
+      "role": "Process Engineer",
+      "company": "Dachziegelwerke Nelskamp GmbH",
+      "location": "Groß Ammensleben",
+      "start": "Sep 2022",
+      "end": "Jul 2024",
+      "points": ["Ran tunnel kilns, drying plants and steam generators; product quality up 20%, production lead time down 10%."]
+    },
+    {
+      "role": "Master Thesis Student",
+      "company": "FEST GmbH",
+      "location": "Goslar",
+      "start": "Jan 2022",
+      "end": "Aug 2022",
+      "points": ["CFD model of an anode water separator for PEM electrolysis."]
+    },
+    {
+      "role": "Process Engineering Intern",
+      "company": "FEST GmbH",
+      "location": "Goslar",
+      "start": "Nov 2021",
+      "end": "Dec 2021",
+      "points": ["Hydrogen release simulation to define Ex-zones."]
+    },
+    {
+      "role": "Student Research Assistant",
+      "company": "Institute of Fluid Dynamics and Thermodynamics, OVGU",
+      "location": "Magdeburg",
+      "start": "Jul 2021",
+      "end": "Sep 2021",
+      "points": ["Validated CFD results against mini-plant data."]
+    },
+    {
+      "role": "Graduate Engineering Trainee",
+      "company": "Abhiyanta Inc.",
+      "location": "Bengaluru, India",
+      "start": "Jul 2018",
+      "end": "Mar 2019",
+      "points": ["3D and 2D CAD of equipment and custom OEM machines (AutoCAD, SolidWorks)."]
+    },
+    {
+      "role": "Project Trainee",
+      "company": "Bosch Limited",
+      "location": "Bengaluru, India",
+      "start": "Jan 2018",
+      "end": "Apr 2018",
+      "points": ["Shorter machining cycle time through optimized grinding parameters."]
     }
   ],
   "education": [
     {
-      "degree": "[PLACEHOLDER] Degree and subject",
-      "school": "[PLACEHOLDER] University",
-      "location": "[PLACEHOLDER] City, Country",
-      "start": "[PLACEHOLDER] YYYY",
-      "end": "[PLACEHOLDER] YYYY",
-      "note": "[PLACEHOLDER] Optional: thesis topic, grade, recognition in Germany (anabin/ZAB)"
+      "degree": "Master of Science, Chemical and Energy Engineering",
+      "school": "Otto-von-Guericke University Magdeburg",
+      "location": "Germany",
+      "start": "October 2019",
+      "end": "September 2022",
+      "notes": [
+        "German grade: 2.0 (1.0 = best).",
+        "Focus: Computational Fluid Dynamics (CFD), Numerical Simulation, Advanced Fluid Dynamics, Process Systems Engineering, Plant Design and Process Safety, Thermal and Mechanical Process Engineering."
+      ]
+    },
+    {
+      "degree": "Bachelor of Engineering, Mechanical Engineering",
+      "school": "Visvesvaraya Technological University",
+      "location": "Bengaluru, India",
+      "start": "June 2014",
+      "end": "July 2018",
+      "notes": [
+        "German grade: 2.0 (modified Bavarian formula).",
+        "Focus: Control Engineering, Hydraulics and Pneumatics, Fluid Mechanics, Thermodynamics."
+      ]
     }
   ],
   "skills": [
-    { "group": "[PLACEHOLDER] Technical", "items": ["[PLACEHOLDER] Skill", "[PLACEHOLDER] Skill"] },
-    { "group": "[PLACEHOLDER] Software", "items": ["[PLACEHOLDER] Skill", "[PLACEHOLDER] Skill"] },
-    { "group": "[PLACEHOLDER] Languages", "items": ["[PLACEHOLDER] English (level)", "[PLACEHOLDER] German (level)"] }
+    { "group": "Process engineering", "items": ["Process optimization", "Process simulation", "Process safety", "CO2 emission reduction", "Drying technology", "Microwave drying", "Thermal processes", "Process control", "Heat exchangers"] },
+    { "group": "Simulation & CFD", "items": ["OpenFOAM (advanced)", "ANSYS CFX (good)", "Star-CCM+ (good)", "COMSOL Multiphysics (good)", "ParaView (good)", "Salome (basic)"] },
+    { "group": "CAD", "items": ["SolidWorks (good)", "AutoCAD (good)", "Solid Edge (basic)"] },
+    { "group": "Programming", "items": ["MATLAB (good)", "VBA Excel (good)", "Python (basic)", "C (basic)"] },
+    { "group": "Methods", "items": ["Project management", "Lean Six Sigma", "Microsoft Office (advanced)"] },
+    { "group": "Languages", "items": ["English (C1)", "German (B2)", "Kannada (native)"] }
+  ],
+  "certificates": [
+    "Six Sigma Principles (Coursera, Sep 2021)",
+    "Introduction to Programming with MATLAB (Coursera, Oct 2020)"
   ],
   "contact": {
-    "email": "placeholder@example.com",
-    "linkedin": "https://www.linkedin.com/in/PLACEHOLDER/",
-    "github": "https://github.com/PLACEHOLDER"
+    "email": "akshayun1996@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/akshay-ujjani-narasimhaiah-523932116",
+    "github": null
   },
   "cv": {
-    "own": "/cv/CV_EN.pdf",
-    "other": "/cv/CV_DE.pdf"
+    "own": "/cv/Akshay_Ujjani_Narasimhaiah_CV.pdf",
+    "other": "/cv/Akshay_Ujjani_Narasimhaiah_Lebenslauf.pdf"
   },
   "legal": {
     "title": "Legal notice",
     "responsible": "Responsible for the content of this website:",
-    "name": "[PLACEHOLDER] Your Name",
-    "email": "placeholder@example.com",
+    "name": "Akshay Ujjani Narasimhaiah",
+    "email": "akshayun1996@gmail.com",
     "body": [
       "This is a private, non-commercial portfolio website.",
       "This website does not use cookies, analytics or third-party services. The hosting provider (GitHub Pages) may process technical data such as IP addresses in its server logs; see the GitHub Privacy Statement."

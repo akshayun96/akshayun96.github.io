@@ -13,6 +13,7 @@ const L = t.ui.projectLabels;
     <div>
       <h1 id="hero-name">{t.hero.name}</h1>
       <p class="role">{t.hero.role}</p>
+      <p class="muted location">{t.hero.location}</p>
       <p class="bio">{t.hero.bio}</p>
       <p class="actions">
         <a class="button" href={t.cv.own} download>{t.ui.downloadCv}</a>
@@ -27,7 +28,7 @@ const L = t.ui.projectLabels;
     <ul class="cards">
       {t.projects.map((p) => (
         <li class="card">
-          <img src={p.image.src} alt={p.image.alt} width="640" height="360" loading="lazy" />
+          {p.images[0] && <img src={p.images[0].src} alt={p.images[0].alt} width="640" height="360" loading="lazy" />}
           <div class="card-body">
             <h3>{p.title}</h3>
             <dl>
@@ -36,13 +37,18 @@ const L = t.ui.projectLabels;
               <dt>{L.tools}</dt>
               <dd><ul class="tags">{p.tools.map((tool) => <li>{tool}</li>)}</ul></dd>
               <dt>{L.result}</dt><dd>{p.result}</dd>
+              {p.publication && (<><dt>{L.publication}</dt><dd><a href={p.publication.url} rel="noopener">{p.publication.text}</a></dd></>)}
             </dl>
-            {p.detail && (
+            {p.detailPage && (
               <a href={`/${lang}/projects/${p.slug}/`}>{t.ui.readMore}<span class="visually-hidden">: {p.title}</span> →</a>
             )}
           </div>
         </li>
       ))}
+    </ul>
+    <h3 class="subhead">{t.ui.smallProjectsTitle}</h3>
+    <ul class="small-projects">
+      {t.smallProjects.map((s) => <li><strong>{s.title}.</strong> {s.text}</li>)}
     </ul>
   </section>
 
@@ -68,7 +74,7 @@ const L = t.ui.projectLabels;
           <p class="dates">{e.start} – {e.end ?? t.ui.present}</p>
           <h3>{e.degree}</h3>
           <p class="muted">{e.school} · {e.location}</p>
-          {e.note && <p>{e.note}</p>}
+          {e.notes.map((n) => <p>{n}</p>)}
         </li>
       ))}
     </ol>
@@ -84,6 +90,8 @@ const L = t.ui.projectLabels;
         </div>
       ))}
     </div>
+    <h3 class="subhead">{t.ui.certificatesTitle}</h3>
+    <ul class="small-projects">{t.certificates.map((c) => <li>{c}</li>)}</ul>
   </section>
 
   <section id="contact" aria-labelledby="contact-title">

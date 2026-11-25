@@ -9,14 +9,11 @@ const errors = [];
 const kind = (v) => (v === null ? 'null' : Array.isArray(v) ? 'array' : typeof v);
 
 function compare(a, b, path) {
-  // null and a value are both allowed (e.g. optional "detail", "end", "github")
-  if (a === null || b === null) {
-    if (path.endsWith('.detail') && kind(a) !== kind(b)) errors.push(`${path}: detail page exists in one language only`);
-    return;
-  }
+  // null and a value are both allowed (e.g. optional "end", "github", "publication")
+  if (a === null || b === null) return;
   if (kind(a) !== kind(b)) return errors.push(`${path}: ${kind(a)} vs ${kind(b)}`);
   if (kind(a) === 'array') {
-    if (a.length !== b.length && !path.endsWith('.points') && !path.endsWith('.items') && !path.endsWith('.tools') && !path.endsWith('.detail') && !path.endsWith('.body')) {
+    if (a.length !== b.length && !path.endsWith('.points') && !path.endsWith('.items') && !path.endsWith('.tools') && !path.endsWith('.body')) {
       errors.push(`${path}: ${a.length} items vs ${b.length}`);
     }
     a.forEach((v, i) => i < b.length && compare(v, b[i], `${path}[${i}]`));
