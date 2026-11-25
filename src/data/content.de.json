@@ -39,7 +39,7 @@
     "name": "Akshay Ujjani Narasimhaiah",
     "role": "Verfahrensingenieur: Prozessoptimierung, thermische Verfahren und CFD",
     "location": "Magdeburg, Deutschland",
-    "bio": "Ich bin Verfahrensingenieur in Magdeburg. Zwei Jahre lang habe ich in einem Dachziegelwerk Tunnelöfen, Trocknungsanlagen und Dampferzeuger betreut. Danach habe ich zwei Jahre an der Otto-von-Guericke-Universität Magdeburg untersucht, wie die Prozessführung den Energiebedarf von Mikrowellentrocknern beeinflusst. Mit OpenFOAM und COMSOL erstelle ich Simulationsmodelle für praktische Fragen aus dem Anlagenbetrieb: Energiebedarf, Sicherheit und Durchsatz. Ich suche eine Stelle in der Verfahrenstechnik, im Anlagenbau oder in der Simulation in Deutschland.",
+    "bio": "Ich bin Verfahrensingenieur in Magdeburg. Zwei Jahre lang habe ich in einem Dachziegelwerk Tunnelöfen, Trocknungsanlagen und Dampferzeuger betreut. Danach habe ich zwei Jahre an der Otto-von-Guericke-Universität Magdeburg untersucht, wie die Prozessführung den Energiebedarf von Mikrowellentrocknern beeinflusst. Mit OpenFOAM und COMSOL erstelle ich Simulationsmodelle für praktische Fragen aus dem Anlagenbetrieb: Energiebedarf, Sicherheit und Durchsatz. Ich suche eine Stelle in der Verfahrenstechnik, im Anlagenbau, als Projektingenieur oder in der Simulation in Deutschland.",
     "headshot": {
       "src": "/images/headshot.jpg",
       "alt": "Porträt von Akshay Ujjani Narasimhaiah"
@@ -99,8 +99,11 @@
       "tools": ["Taguchi-Methode", "Bosch-Produktionssystem"],
       "result": "Kürzere Bearbeitungszeit und höhere Ausbringung je Schicht; ein Bearbeitungsschritt und die zugehörige Maschine entfallen.",
       "publication": null,
-      "images": [],
-      "detailPage": false
+      "images": [
+        { "src": "/images/sliding-tappets.jpg", "alt": "Zwei Gleitstößel einer Förderpumpe" },
+        { "src": "/images/grinding-machine.jpg", "alt": "Spitzenlose Schleifmaschine" }
+      ],
+      "detailPage": true
     }
   ],
   "smallProjects": [
