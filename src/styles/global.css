@@ -106,7 +106,7 @@ main section:last-child { border-bottom: 0; }
 
 /* Project cards */
 .cards { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 1.5rem; }
-.card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; display: flex; flex-direction: column; }
+.card { position: relative; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; display: flex; flex-direction: column; }
 /* contain, not cover: most images are schematics and simulation plots that must not be cropped.
    multiply blends their white backgrounds into the tinted plate, so the image looks edge to edge. */
 .card-media { isolation: isolate; background: linear-gradient(135deg, #e6eefb, #f7f9fc); border-bottom: 1px solid var(--border); }
@@ -122,6 +122,9 @@ main section:last-child { border-bottom: 0; }
 .steps p { margin: 0; color: var(--muted); }
 .card-body { padding: 1.25rem; display: flex; flex-direction: column; gap: 0.75rem; flex: 1; }
 .card-body > a { margin-top: auto; font-weight: 600; }
+/* stretched link: the whole card opens the detail page; links inside the card (publication) sit above it */
+.card-link::after { content: ""; position: absolute; inset: 0; z-index: 1; }
+.card dd a { position: relative; z-index: 2; }
 dl { margin: 0; font-size: 0.95rem; }
 dt { font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); margin-top: 0.6rem; }
 dd { margin: 0.1rem 0 0; }

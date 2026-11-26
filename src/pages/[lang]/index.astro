@@ -44,7 +44,7 @@ const L = t.ui.projectLabels;
               {p.publication && (<><dt>{L.publication}</dt><dd><a href={p.publication.url} rel="noopener">{p.publication.text}</a></dd></>)}
             </dl>
             {p.detailPage && (
-              <a href={`/${lang}/projects/${p.slug}/`}>{t.ui.readMore}<span class="visually-hidden">: {p.title}</span> →</a>
+              <a class="card-link" href={`/${lang}/projects/${p.slug}/`}>{t.ui.readMore}<span class="visually-hidden">: {p.title}</span> →</a>
             )}
           </div>
         </li>
