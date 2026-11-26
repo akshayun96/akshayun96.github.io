@@ -30,6 +30,12 @@ en.projects.forEach((p, i) => {
   if (de.projects[i] && p.slug !== de.projects[i].slug) errors.push(`$.projects[${i}].slug: "${p.slug}" vs "${de.projects[i].slug}" (slugs must match)`);
 });
 
+for (const [l, c] of [['en', en], ['de', de]]) {
+  for (const f of c.hero.focus.items) {
+    if (!c.projects.some((p) => p.slug === f.slug && p.detailPage)) errors.push(`${l}: hero.focus links to "${f.slug}", which has no detail page`);
+  }
+}
+
 if (errors.length) {
   console.error('content.en.json and content.de.json do not match:\n  ' + errors.join('\n  '));
   process.exit(1);

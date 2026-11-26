@@ -33,47 +33,70 @@
     "contactIntro": "Feel free to get in touch by email or on LinkedIn.",
     "emailLabel": "Email",
     "linkedinLabel": "LinkedIn",
-    "githubLabel": "GitHub"
+    "githubLabel": "GitHub",
+    "highlightsLabel": "Key figures"
   },
   "hero": {
     "name": "Akshay Ujjani Narasimhaiah",
     "role": "Process & Project Engineer: process optimization, thermal processes and CFD",
     "location": "Magdeburg, Germany",
-    "bio": "I'm a process engineer based in Magdeburg. For two years I ran tunnel kilns, drying plants and steam generators at a roof-tile plant. After that I spent two years at Otto-von-Guericke University Magdeburg researching how process control affects the energy demand of microwave dryers. I also build simulation models in OpenFOAM and COMSOL to answer practical plant questions about energy use, safety and throughput. I'm looking for a role in process engineering, plant engineering, project engineering or simulation in Germany, ideally in the hydrogen and PEM electrolyzer industry.",
+    "bio": "I'm a process engineer based in Magdeburg. For two years I ran tunnel kilns, drying plants and steam generators at a roof-tile plant. After that I spent two years at Otto-von-Guericke University Magdeburg researching how process control affects the energy demand of microwave dryers. I also build simulation models in OpenFOAM and COMSOL to answer practical plant questions about energy use, safety and throughput. I'm looking for a role in Germany in process engineering, plant engineering, project engineering or simulation. My first choice is the hydrogen and PEM electrolyzer industry, but I'm open to other sectors as well.",
+    "focus": {
+      "label": "Hydrogen experience",
+      "items": [
+        {
+          "text": "CFD of a PEM anode water separator (master thesis, FEST GmbH)",
+          "slug": "pem-separator"
+        },
+        {
+          "text": "Ex-zone simulation for a hydrogen vent line (internship, FEST GmbH)",
+          "slug": "hydrogen-ex-zone"
+        }
+      ]
+    },
+    "openTo": "Open to: process, plant, project and simulation roles · Germany · hydrogen first, other sectors welcome",
     "headshot": {
       "src": "/images/headshot.jpg",
       "alt": "Portrait of Akshay Ujjani Narasimhaiah"
     }
   },
-  "projects": [
+  "highlights": [
     {
-      "slug": "microwave-drying",
-      "title": "Microwave drying of roof tiles (research project, OVGU)",
-      "problem": "Gas-fired convective dryers use a lot of energy. Microwave drying could cut energy use by 50% and lead time by 75%, but how the process is run decides how much of that is achieved.",
-      "whatIDid": "In a BMWK-funded IGF research project, I designed and ran the test plan for roof tiles and characterised the microwave dryer with impedance tuning, reflected-power measurements and energy balances. I formulated the drying model, built 3D electromagnetic and thermal simulations of the whole drying chamber in COMSOL Multiphysics, and coordinated the technical upgrade of the laboratory dryer with the project partner MFPA Weimar.",
-      "tools": ["COMSOL Multiphysics", "Energy balances", "Laboratory measurement"],
-      "result": "Project report, results presented at one national and two international conferences, and one publication.",
-      "publication": {
-        "text": "Abstract in the Book of Abstracts of the 2nd International Workshop on Particle-Gas Systems (CRC 2025)",
-        "url": "http://dx.doi.org/10.25673/118928"
-      },
-      "images": [
-        { "src": "/images/microwave-dryer.png", "alt": "Schematic of the laboratory microwave dryer: drying chamber with turntable, sample and dimensions" },
-        { "src": "/images/roof-tile-sample.jpg", "alt": "Roof-tile sample on the dryer turntable with fibre-optic temperature sensors" }
-      ],
-      "detailPage": true
+      "value": "2 years",
+      "label": "running tunnel kilns, drying plants and steam generators"
     },
+    {
+      "value": "+20% / −10%",
+      "label": "product quality / production lead time at Nelskamp"
+    },
+    {
+      "value": "3 + 1",
+      "label": "conference presentations and publication on microwave drying"
+    }
+  ],
+  "projects": [
     {
       "slug": "pem-separator",
       "title": "Anode water separator for PEM electrolysis (master thesis, FEST GmbH)",
       "problem": "Modular PEM electrolyzer systems need a separator vessel that reliably separates the oxygen from the water leaving the anode, in a vessel that is as compact as possible.",
       "whatIDid": "I implemented a CFD model of the two-phase separation in the anode water separator and compared baffle-plate designs and operating pressures.",
-      "tools": ["OpenFOAM (twoPhaseEulerFoam, Euler-Euler model)", "SALOME", "snappyHexMesh", "ParaView"],
+      "tools": [
+        "OpenFOAM (twoPhaseEulerFoam, Euler-Euler model)",
+        "SALOME",
+        "snappyHexMesh",
+        "ParaView"
+      ],
       "result": "I found the best baffle-plate design and operating pressure, and showed how much separation efficiency depends on the vessel length. FEST used the results to optimize and scale up the separator.",
       "publication": null,
       "images": [
-        { "src": "/images/separator-mesh.png", "alt": "Computational mesh of the horizontal separator vessel with its inlet and outlet nozzles" },
-        { "src": "/images/separator-streamlines.png", "alt": "Simulated oxygen streamlines inside the separator vessel" }
+        {
+          "src": "/images/separator-mesh.png",
+          "alt": "Computational mesh of the horizontal separator vessel with its inlet and outlet nozzles"
+        },
+        {
+          "src": "/images/separator-streamlines.png",
+          "alt": "Simulated oxygen streamlines inside the separator vessel"
+        }
       ],
       "detailPage": true
     },
@@ -82,12 +105,49 @@
       "title": "Explosion-protection zone for a hydrogen vent line (internship, FEST GmbH)",
       "problem": "The Ex-zone around the vent line of a PEM electrolysis plant had been estimated too large.",
       "whatIDid": "I simulated the hydrogen release from the vent line for several wind cases with FDS and Fluent and evaluated the results in Smokeview.",
-      "tools": ["FDS (Fire Dynamics Simulator)", "Smokeview", "ANSYS Fluent"],
+      "tools": [
+        "FDS (Fire Dynamics Simulator)",
+        "Smokeview",
+        "ANSYS Fluent"
+      ],
       "result": "A simulation-based Ex-zone that replaced the previously overestimated zone.",
       "publication": null,
       "images": [
-        { "src": "/images/hydrogen-plume.png", "alt": "FDS simulation of the hydrogen plume rising from the vent line" },
-        { "src": "/images/ex-zone-domain.png", "alt": "Simulation domain with the vent, meshed finer around the release" }
+        {
+          "src": "/images/hydrogen-plume.png",
+          "alt": "FDS simulation of the hydrogen plume rising from the vent line"
+        },
+        {
+          "src": "/images/ex-zone-domain.png",
+          "alt": "Simulation domain with the vent, meshed finer around the release"
+        }
+      ],
+      "detailPage": true
+    },
+    {
+      "slug": "microwave-drying",
+      "title": "Microwave drying of roof tiles (research project, OVGU)",
+      "problem": "Gas-fired convective dryers use a lot of energy. Microwave drying could cut energy use by 50% and lead time by 75%, but how the process is run decides how much of that is achieved.",
+      "whatIDid": "In a BMWK-funded IGF research project, I designed and ran the test plan for roof tiles and characterised the microwave dryer with impedance tuning, reflected-power measurements and energy balances. I formulated the drying model, built 3D electromagnetic and thermal simulations of the whole drying chamber in COMSOL Multiphysics, and coordinated the technical upgrade of the laboratory dryer with the project partner MFPA Weimar.",
+      "tools": [
+        "COMSOL Multiphysics",
+        "Energy balances",
+        "Laboratory measurement"
+      ],
+      "result": "Project report, results presented at one national and two international conferences, and one publication.",
+      "publication": {
+        "text": "Abstract in the Book of Abstracts of the 2nd International Workshop on Particle-Gas Systems (CRC 2025)",
+        "url": "http://dx.doi.org/10.25673/118928"
+      },
+      "images": [
+        {
+          "src": "/images/microwave-dryer.png",
+          "alt": "Schematic of the laboratory microwave dryer: drying chamber with turntable, sample and dimensions"
+        },
+        {
+          "src": "/images/roof-tile-sample.jpg",
+          "alt": "Roof-tile sample on the dryer turntable with fibre-optic temperature sensors"
+        }
       ],
       "detailPage": true
     },
@@ -96,12 +156,21 @@
       "title": "Cycle-time reduction for feed pump sliding tappets (Bosch Limited)",
       "problem": "Finishing the sliding tappets for feed pumps took two machining steps and limited the output per shift.",
       "whatIDid": "In a four-person student project at Bosch, we optimized the grinding parameters with the Taguchi method so that one grinding step replaced grinding plus super-finishing.",
-      "tools": ["Taguchi method", "Bosch Production System"],
+      "tools": [
+        "Taguchi method",
+        "Bosch Production System"
+      ],
       "result": "Shorter cycle time and higher output per shift, with one machining step and its machine no longer needed.",
       "publication": null,
       "images": [
-        { "src": "/images/sliding-tappets.jpg", "alt": "Two feed pump sliding tappets" },
-        { "src": "/images/grinding-machine.jpg", "alt": "Centreless grinding machine" }
+        {
+          "src": "/images/sliding-tappets.jpg",
+          "alt": "Two feed pump sliding tappets"
+        },
+        {
+          "src": "/images/grinding-machine.jpg",
+          "alt": "Centreless grinding machine"
+        }
       ],
       "detailPage": true
     }
@@ -116,6 +185,23 @@
       "text": "Analysed the flow characteristics of the air flow around an eagle."
     }
   ],
+  "approach": {
+    "title": "How I work",
+    "steps": [
+      {
+        "title": "Measure",
+        "text": "Test plans, energy balances and plant data, from the laboratory microwave dryer to the roof-tile plant."
+      },
+      {
+        "title": "Model",
+        "text": "CFD and multiphysics models in OpenFOAM, COMSOL Multiphysics, FDS and Fluent."
+      },
+      {
+        "title": "Improve",
+        "text": "Turn the results into design and operating decisions: separator design, Ex-zones, grinding parameters."
+      }
+    ]
+  },
   "experience": [
     {
       "role": "Research Associate",
@@ -123,7 +209,9 @@
       "location": "Magdeburg",
       "start": "Aug 2024",
       "end": "Oct 2026",
-      "points": ["Energy demand of microwave dryers in a BMWK-funded IGF research project."]
+      "points": [
+        "Energy demand of microwave dryers in a BMWK-funded IGF research project."
+      ]
     },
     {
       "role": "Process Engineer",
@@ -131,7 +219,9 @@
       "location": "Groß Ammensleben",
       "start": "Sep 2022",
       "end": "Jul 2024",
-      "points": ["Ran tunnel kilns, drying plants and steam generators; product quality up 20%, production lead time down 10%."]
+      "points": [
+        "Ran tunnel kilns, drying plants and steam generators; product quality up 20%, production lead time down 10%."
+      ]
     },
     {
       "role": "Master Thesis Student",
@@ -139,7 +229,9 @@
       "location": "Goslar",
       "start": "Jan 2022",
       "end": "Aug 2022",
-      "points": ["CFD model of an anode water separator for PEM electrolysis."]
+      "points": [
+        "CFD model of an anode water separator for PEM electrolysis."
+      ]
     },
     {
       "role": "Process Engineering Intern",
@@ -147,7 +239,9 @@
       "location": "Goslar",
       "start": "Nov 2021",
       "end": "Dec 2021",
-      "points": ["Hydrogen release simulation to define Ex-zones."]
+      "points": [
+        "Hydrogen release simulation to define Ex-zones."
+      ]
     },
     {
       "role": "Student Research Assistant",
@@ -155,7 +249,9 @@
       "location": "Magdeburg",
       "start": "Jul 2021",
       "end": "Sep 2021",
-      "points": ["Validated CFD results against mini-plant data."]
+      "points": [
+        "Validated CFD results against mini-plant data."
+      ]
     },
     {
       "role": "Graduate Engineering Trainee",
@@ -163,7 +259,9 @@
       "location": "Bengaluru, India",
       "start": "Jul 2018",
       "end": "Mar 2019",
-      "points": ["3D and 2D CAD of equipment and custom OEM machines (AutoCAD, SolidWorks)."]
+      "points": [
+        "3D and 2D CAD of equipment and custom OEM machines (AutoCAD, SolidWorks)."
+      ]
     },
     {
       "role": "Project Trainee",
@@ -171,7 +269,9 @@
       "location": "Bengaluru, India",
       "start": "Jan 2018",
       "end": "Apr 2018",
-      "points": ["Shorter machining cycle time through optimized grinding parameters."]
+      "points": [
+        "Shorter machining cycle time through optimized grinding parameters."
+      ]
     }
   ],
   "education": [
@@ -199,12 +299,65 @@
     }
   ],
   "skills": [
-    { "group": "Process engineering", "items": ["Process optimization", "Process simulation", "Process safety", "CO2 emission reduction", "Drying technology", "Microwave drying", "Thermal processes", "Process control", "Heat exchangers"] },
-    { "group": "Simulation & CFD", "items": ["OpenFOAM (advanced)", "ANSYS CFX (good)", "ANSYS Fluent (basic)", "Star-CCM+ (good)", "COMSOL Multiphysics (good)", "ParaView (good)", "Salome (basic)"] },
-    { "group": "CAD", "items": ["SolidWorks (good)", "AutoCAD (good)", "Solid Edge (basic)"] },
-    { "group": "Programming", "items": ["MATLAB (good)", "VBA Excel (good)", "Python (basic)", "C (basic)"] },
-    { "group": "Methods", "items": ["Project management", "Lean Six Sigma", "Microsoft Office (advanced)"] },
-    { "group": "Languages", "items": ["English (C1)", "German (B2)", "Kannada (native)"] }
+    {
+      "group": "Process engineering",
+      "items": [
+        "Process optimization",
+        "Process simulation",
+        "Process safety",
+        "CO2 emission reduction",
+        "Drying technology",
+        "Microwave drying",
+        "Thermal processes",
+        "Process control",
+        "Heat exchangers"
+      ]
+    },
+    {
+      "group": "Simulation & CFD",
+      "items": [
+        "OpenFOAM (advanced)",
+        "ANSYS CFX (good)",
+        "ANSYS Fluent (basic)",
+        "Star-CCM+ (good)",
+        "COMSOL Multiphysics (good)",
+        "ParaView (good)",
+        "Salome (basic)"
+      ]
+    },
+    {
+      "group": "CAD",
+      "items": [
+        "SolidWorks (good)",
+        "AutoCAD (good)",
+        "Solid Edge (basic)"
+      ]
+    },
+    {
+      "group": "Programming",
+      "items": [
+        "MATLAB (good)",
+        "VBA Excel (good)",
+        "Python (basic)",
+        "C (basic)"
+      ]
+    },
+    {
+      "group": "Methods",
+      "items": [
+        "Project management",
+        "Lean Six Sigma",
+        "Microsoft Office (advanced)"
+      ]
+    },
+    {
+      "group": "Languages",
+      "items": [
+        "English (C1)",
+        "German (B2)",
+        "Kannada (native)"
+      ]
+    }
   ],
   "certificates": [
     "Six Sigma Principles (Coursera, Sep 2021)",

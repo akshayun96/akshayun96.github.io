@@ -15,12 +15,22 @@ const L = t.ui.projectLabels;
       <p class="role">{t.hero.role}</p>
       <p class="muted location">{t.hero.location}</p>
       <p class="bio">{t.hero.bio}</p>
+      <div class="focus">
+        <p class="focus-label">{t.hero.focus.label}</p>
+        <ul>
+          {t.hero.focus.items.map((f) => <li><a href={`/${lang}/projects/${f.slug}/`}>{f.text}</a></li>)}
+        </ul>
+      </div>
       <p class="actions">
         <a class="button" href={t.cv.own} download>{t.ui.downloadCv}</a>
         <a class="button secondary" href={t.cv.other} download>{t.ui.downloadCvOther}</a>
       </p>
+      <p class="open-to">{t.hero.openTo}</p>
     </div>
     <img class="headshot" src={t.hero.headshot.src} alt={t.hero.headshot.alt} width="240" height="240" />
+    <ul class="highlights" aria-label={t.ui.highlightsLabel}>
+      {t.highlights.map((h) => <li><strong>{h.value}</strong> <span>{h.label}</span></li>)}
+    </ul>
   </section>
 
   <section id="projects" aria-labelledby="projects-title">
@@ -28,7 +38,7 @@ const L = t.ui.projectLabels;
     <ul class="cards">
       {t.projects.map((p) => (
         <li class="card">
-          {p.images[0] && <img src={p.images[0].src} alt={p.images[0].alt} width="640" height="360" loading="lazy" />}
+          {p.images[0] && <div class="card-media"><img src={p.images[0].src} alt={p.images[0].alt} width="640" height="360" loading="lazy" /></div>}
           <div class="card-body">
             <h3>{p.title}</h3>
             <dl>
@@ -50,6 +60,18 @@ const L = t.ui.projectLabels;
     <ul class="small-projects">
       {t.smallProjects.map((s) => <li><strong>{s.title}.</strong> {s.text}</li>)}
     </ul>
+  </section>
+
+  <section id="approach" aria-labelledby="approach-title">
+    <h2 id="approach-title">{t.approach.title}</h2>
+    <ol class="steps">
+      {t.approach.steps.map((step) => (
+        <li>
+          <h3>{step.title}</h3>
+          <p>{step.text}</p>
+        </li>
+      ))}
+    </ol>
   </section>
 
   <section id="experience" aria-labelledby="experience-title">

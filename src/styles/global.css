@@ -6,6 +6,7 @@
   --border: #e2e5ea;
   --accent: #1f5fbf; /* the one accent color; 6.0:1 on white */
   --accent-contrast: #ffffff;
+  --accent-tint: #eef3fb;
   --radius: 10px;
   --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
@@ -19,6 +20,7 @@
     --border: #2c3138;
     --accent: #7fb0ff;
     --accent-contrast: #0c1a30;
+    --accent-tint: #18243a;
   }
 }
 
@@ -45,6 +47,7 @@ a:hover { text-decoration-thickness: 2px; }
 h1, h2, h3 { line-height: 1.25; margin: 0 0 0.5rem; overflow-wrap: break-word; hyphens: auto; }
 h1 { font-size: clamp(1.5rem, 6.5vw, 2.75rem); letter-spacing: -0.02em; }
 h2 { font-size: 1.6rem; margin-bottom: 1.5rem; }
+h2::after { content: ""; display: block; width: 2.5rem; height: 3px; margin-top: 0.6rem; border-radius: 2px; background: var(--accent); }
 h3 { font-size: 1.1rem; }
 
 .container { max-width: 960px; margin: 0 auto; padding: 0 1.25rem; }
@@ -85,6 +88,13 @@ main section:last-child { border-bottom: 0; }
 .hero .role { font-size: 1.25rem; color: var(--accent); margin: 0 0 0.25rem; font-weight: 550; }
 .hero .location { margin: 0 0 1rem; }
 .hero .bio { max-width: 38rem; color: var(--muted); }
+.focus { max-width: 38rem; margin-top: 1.25rem; padding: 0.75rem 1rem; border-left: 3px solid var(--accent); background: var(--accent-tint); border-radius: 0 var(--radius) var(--radius) 0; }
+.focus-label { margin: 0 0 0.25rem; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); }
+.focus ul { margin: 0; padding-left: 1.1rem; display: grid; gap: 0.2rem; }
+.open-to { margin: 0.75rem 0 0; font-size: 0.9rem; color: var(--muted); }
+.highlights { grid-column: 1 / -1; list-style: none; margin: 1rem 0 0; padding: 1.5rem 0 0; border-top: 1px solid var(--border); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 1.5rem; }
+.highlights strong { display: block; font-size: 1.6rem; line-height: 1.2; color: var(--accent); letter-spacing: -0.01em; }
+.highlights span { color: var(--muted); font-size: 0.95rem; }
 .headshot { width: 240px; height: 240px; border-radius: 50%; object-fit: cover; object-position: 50% 20%; border: 1px solid var(--border); }
 @media (max-width: 680px) {
   .hero { grid-template-columns: 1fr; padding-top: 3rem; }
@@ -102,8 +112,19 @@ main section:last-child { border-bottom: 0; }
 /* Project cards */
 .cards { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 1.5rem; }
 .card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; display: flex; flex-direction: column; }
-/* contain, not cover: most images are schematics and simulation plots that must not be cropped */
-.card img { aspect-ratio: 16 / 9; object-fit: contain; width: 100%; background: #fff; border-bottom: 1px solid var(--border); padding: 0.5rem; }
+/* contain, not cover: most images are schematics and simulation plots that must not be cropped.
+   multiply blends their white backgrounds into the tinted plate, so the image looks edge to edge. */
+.card-media { isolation: isolate; background: linear-gradient(135deg, #e6eefb, #f7f9fc); border-bottom: 1px solid var(--border); }
+.card-media img { aspect-ratio: 16 / 9; object-fit: contain; width: 100%; padding: 0.75rem; mix-blend-mode: multiply; transition: transform 0.3s ease; }
+.card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+.card:hover, .card:focus-within { transform: translateY(-3px); box-shadow: 0 10px 24px -12px rgb(16 40 80 / 0.25); }
+.card:hover .card-media img { transform: scale(1.03); }
+@media (prefers-reduced-motion: reduce) { .card, .card-media img { transition: none; } .card:hover, .card:focus-within, .card:hover .card-media img { transform: none; } }
+
+.steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr)); gap: 1.5rem; counter-reset: step; }
+.steps li { counter-increment: step; padding: 1.25rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); }
+.steps li::before { content: counter(step); display: inline-grid; place-items: center; width: 2rem; height: 2rem; margin-bottom: 0.75rem; border-radius: 50%; background: var(--accent); color: var(--accent-contrast); font-weight: 700; }
+.steps p { margin: 0; color: var(--muted); }
 .card-body { padding: 1.25rem; display: flex; flex-direction: column; gap: 0.75rem; flex: 1; }
 .card-body > a { margin-top: auto; font-weight: 600; }
 dl { margin: 0; font-size: 0.95rem; }

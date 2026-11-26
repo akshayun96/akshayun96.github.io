@@ -33,47 +33,70 @@
     "contactIntro": "Sie erreichen mich per E-Mail oder über LinkedIn.",
     "emailLabel": "E-Mail",
     "linkedinLabel": "LinkedIn",
-    "githubLabel": "GitHub"
+    "githubLabel": "GitHub",
+    "highlightsLabel": "Kennzahlen"
   },
   "hero": {
     "name": "Akshay Ujjani Narasimhaiah",
     "role": "Verfahrens- und Projektingenieur: Prozessoptimierung, thermische Verfahren und CFD",
     "location": "Magdeburg, Deutschland",
-    "bio": "Ich bin Verfahrensingenieur in Magdeburg. Zwei Jahre lang habe ich in einem Dachziegelwerk Tunnelöfen, Trocknungsanlagen und Dampferzeuger betreut. Danach habe ich zwei Jahre an der Otto-von-Guericke-Universität Magdeburg untersucht, wie die Prozessführung den Energiebedarf von Mikrowellentrocknern beeinflusst. Mit OpenFOAM und COMSOL erstelle ich Simulationsmodelle für praktische Fragen aus dem Anlagenbetrieb: Energiebedarf, Sicherheit und Durchsatz. Ich suche eine Stelle in der Verfahrenstechnik, im Anlagenbau, als Projektingenieur oder in der Simulation in Deutschland, am liebsten in der Wasserstoff- und PEM-Elektrolyse-Branche.",
+    "bio": "Ich bin Verfahrensingenieur in Magdeburg. Zwei Jahre lang habe ich in einem Dachziegelwerk Tunnelöfen, Trocknungsanlagen und Dampferzeuger betreut. Danach habe ich zwei Jahre an der Otto-von-Guericke-Universität Magdeburg untersucht, wie die Prozessführung den Energiebedarf von Mikrowellentrocknern beeinflusst. Mit OpenFOAM und COMSOL erstelle ich Simulationsmodelle für praktische Fragen aus dem Anlagenbetrieb: Energiebedarf, Sicherheit und Durchsatz. Ich suche eine Stelle in Deutschland in der Verfahrenstechnik, im Anlagenbau, als Projektingenieur oder in der Simulation. Meine erste Wahl ist die Wasserstoff- und PEM-Elektrolyse-Branche, ich bin aber auch für andere Branchen offen.",
+    "focus": {
+      "label": "Erfahrung mit Wasserstoff",
+      "items": [
+        {
+          "text": "CFD eines Anodenwasserabscheiders für die PEM-Elektrolyse (Masterarbeit, FEST GmbH)",
+          "slug": "pem-separator"
+        },
+        {
+          "text": "Ex-Zonen-Simulation für eine Wasserstoff-Ausblaseleitung (Praktikum, FEST GmbH)",
+          "slug": "hydrogen-ex-zone"
+        }
+      ]
+    },
+    "openTo": "Offen für: Stellen in Verfahrenstechnik, Anlagenbau, Projektierung und Simulation · Deutschland · bevorzugt Wasserstoff, andere Branchen willkommen",
     "headshot": {
       "src": "/images/headshot.jpg",
       "alt": "Porträt von Akshay Ujjani Narasimhaiah"
     }
   },
-  "projects": [
+  "highlights": [
     {
-      "slug": "microwave-drying",
-      "title": "Mikrowellentrocknung von Dachziegeln (Forschungsprojekt, OVGU)",
-      "problem": "Gasbefeuerte Konvektionstrockner haben einen hohen Energiebedarf. Mikrowellentrocknung hat das Potenzial, den Energiebedarf um 50 % und die Durchlaufzeit um 75 % zu senken. Wie viel davon erreicht wird, hängt von der Prozessführung ab.",
-      "whatIDid": "Im BMWK-geförderten IGF-Projekt habe ich das Versuchsprogramm für Dachziegel geplant und durchgeführt und den Trockner mittels Impedanzanpassung, Reflexionsmessung und Energiebilanzen charakterisiert. Ich habe das Trocknungsmodell erstellt, elektromagnetische und thermische 3D-Simulationen der gesamten Trocknungskammer in COMSOL Multiphysics aufgebaut und die technische Modernisierung des Labortrockners in Abstimmung mit dem Projektpartner MFPA Weimar koordiniert.",
-      "tools": ["COMSOL Multiphysics", "Energiebilanzen", "Labormesstechnik"],
-      "result": "Projektbericht, Ergebnisse auf drei Konferenzen (1 national, 2 international) und in einer Publikation.",
-      "publication": {
-        "text": "Kurzfassung im Book of Abstracts des 2nd International Workshop on Particle-Gas Systems (CRC 2025)",
-        "url": "http://dx.doi.org/10.25673/118928"
-      },
-      "images": [
-        { "src": "/images/microwave-dryer.png", "alt": "Schema des Labor-Mikrowellentrockners: Trocknungskammer mit Drehteller, Probe und Abmessungen" },
-        { "src": "/images/roof-tile-sample.jpg", "alt": "Dachziegelprobe auf dem Drehteller des Trockners mit faseroptischen Temperatursensoren" }
-      ],
-      "detailPage": true
+      "value": "2 Jahre",
+      "label": "Betrieb von Tunnelöfen, Trocknungsanlagen und Dampferzeugern"
     },
+    {
+      "value": "+20 % / −10 %",
+      "label": "Produktqualität / Durchlaufzeit bei Nelskamp"
+    },
+    {
+      "value": "3 + 1",
+      "label": "Konferenzbeiträge und Publikation zur Mikrowellentrocknung"
+    }
+  ],
+  "projects": [
     {
       "slug": "pem-separator",
       "title": "Anodenwasserabscheider für die PEM-Elektrolyse (Masterarbeit, FEST GmbH)",
       "problem": "Modulare PEM-Elektrolysesysteme brauchen einen Abscheider, der Sauerstoff und Wasser am Anodenaustritt zuverlässig trennt, bei möglichst kompakter Bauform.",
       "whatIDid": "Ich habe ein CFD-Modell der Zweiphasentrennung im Anodenwasserabscheider implementiert und verschiedene Prallblech-Konfigurationen und Betriebsdrücke verglichen.",
-      "tools": ["OpenFOAM (twoPhaseEulerFoam, Euler-Euler-Modell)", "SALOME", "snappyHexMesh", "ParaView"],
+      "tools": [
+        "OpenFOAM (twoPhaseEulerFoam, Euler-Euler-Modell)",
+        "SALOME",
+        "snappyHexMesh",
+        "ParaView"
+      ],
       "result": "Ermittlung der optimalen Prallblech-Konfiguration und des Betriebsdrucks sowie des Einflusses der Behälterlänge auf die Trennleistung. Die Ergebnisse flossen in Optimierung und Scale-up des Abscheiders ein.",
       "publication": null,
       "images": [
-        { "src": "/images/separator-mesh.png", "alt": "Rechengitter des liegenden Abscheiderbehälters mit Ein- und Auslassstutzen" },
-        { "src": "/images/separator-streamlines.png", "alt": "Simulierte Sauerstoff-Stromlinien im Abscheiderbehälter" }
+        {
+          "src": "/images/separator-mesh.png",
+          "alt": "Rechengitter des liegenden Abscheiderbehälters mit Ein- und Auslassstutzen"
+        },
+        {
+          "src": "/images/separator-streamlines.png",
+          "alt": "Simulierte Sauerstoff-Stromlinien im Abscheiderbehälter"
+        }
       ],
       "detailPage": true
     },
@@ -82,12 +105,49 @@
       "title": "Ex-Zone für eine Wasserstoff-Ausblaseleitung (Praktikum, FEST GmbH)",
       "problem": "Die Ex-Zone um die Ausblaseleitung einer PEM-Elektrolyseanlage war zuvor überschätzt worden.",
       "whatIDid": "Ich habe die Wasserstofffreisetzung aus der Ausblaseleitung für mehrere Windgeschwindigkeiten mit FDS und Fluent simuliert und die Ergebnisse in Smokeview ausgewertet.",
-      "tools": ["FDS (Fire Dynamics Simulator)", "Smokeview", "ANSYS Fluent"],
+      "tools": [
+        "FDS (Fire Dynamics Simulator)",
+        "Smokeview",
+        "ANSYS Fluent"
+      ],
       "result": "Eine simulationsgestützte Ex-Zone anstelle der zuvor überschätzten Zone.",
       "publication": null,
       "images": [
-        { "src": "/images/hydrogen-plume.png", "alt": "FDS-Simulation der aus der Ausblaseleitung aufsteigenden Wasserstofffahne" },
-        { "src": "/images/ex-zone-domain.png", "alt": "Simulationsgebiet mit Ausblaseöffnung, im Bereich der Freisetzung feiner vernetzt" }
+        {
+          "src": "/images/hydrogen-plume.png",
+          "alt": "FDS-Simulation der aus der Ausblaseleitung aufsteigenden Wasserstofffahne"
+        },
+        {
+          "src": "/images/ex-zone-domain.png",
+          "alt": "Simulationsgebiet mit Ausblaseöffnung, im Bereich der Freisetzung feiner vernetzt"
+        }
+      ],
+      "detailPage": true
+    },
+    {
+      "slug": "microwave-drying",
+      "title": "Mikrowellentrocknung von Dachziegeln (Forschungsprojekt, OVGU)",
+      "problem": "Gasbefeuerte Konvektionstrockner haben einen hohen Energiebedarf. Mikrowellentrocknung hat das Potenzial, den Energiebedarf um 50 % und die Durchlaufzeit um 75 % zu senken. Wie viel davon erreicht wird, hängt von der Prozessführung ab.",
+      "whatIDid": "Im BMWK-geförderten IGF-Projekt habe ich das Versuchsprogramm für Dachziegel geplant und durchgeführt und den Trockner mittels Impedanzanpassung, Reflexionsmessung und Energiebilanzen charakterisiert. Ich habe das Trocknungsmodell erstellt, elektromagnetische und thermische 3D-Simulationen der gesamten Trocknungskammer in COMSOL Multiphysics aufgebaut und die technische Modernisierung des Labortrockners in Abstimmung mit dem Projektpartner MFPA Weimar koordiniert.",
+      "tools": [
+        "COMSOL Multiphysics",
+        "Energiebilanzen",
+        "Labormesstechnik"
+      ],
+      "result": "Projektbericht, Ergebnisse auf drei Konferenzen (1 national, 2 international) und in einer Publikation.",
+      "publication": {
+        "text": "Kurzfassung im Book of Abstracts des 2nd International Workshop on Particle-Gas Systems (CRC 2025)",
+        "url": "http://dx.doi.org/10.25673/118928"
+      },
+      "images": [
+        {
+          "src": "/images/microwave-dryer.png",
+          "alt": "Schema des Labor-Mikrowellentrockners: Trocknungskammer mit Drehteller, Probe und Abmessungen"
+        },
+        {
+          "src": "/images/roof-tile-sample.jpg",
+          "alt": "Dachziegelprobe auf dem Drehteller des Trockners mit faseroptischen Temperatursensoren"
+        }
       ],
       "detailPage": true
     },
@@ -96,12 +156,21 @@
       "title": "Kürzere Bearbeitungszeit für Förderpumpen-Gleitstößel (Bosch Limited)",
       "problem": "Die Endbearbeitung der Förderpumpen-Gleitstößel brauchte zwei Bearbeitungsschritte und begrenzte die Ausbringung je Schicht.",
       "whatIDid": "In einem studentischen Projekt zu viert bei Bosch haben wir die Schleifparameter mit der Taguchi-Methode optimiert, sodass ein Schleifschritt das Schleifen und Superfinishen ersetzte.",
-      "tools": ["Taguchi-Methode", "Bosch-Produktionssystem"],
+      "tools": [
+        "Taguchi-Methode",
+        "Bosch-Produktionssystem"
+      ],
       "result": "Kürzere Bearbeitungszeit und höhere Ausbringung je Schicht; ein Bearbeitungsschritt und die zugehörige Maschine entfallen.",
       "publication": null,
       "images": [
-        { "src": "/images/sliding-tappets.jpg", "alt": "Zwei Gleitstößel einer Förderpumpe" },
-        { "src": "/images/grinding-machine.jpg", "alt": "Spitzenlose Schleifmaschine" }
+        {
+          "src": "/images/sliding-tappets.jpg",
+          "alt": "Zwei Gleitstößel einer Förderpumpe"
+        },
+        {
+          "src": "/images/grinding-machine.jpg",
+          "alt": "Spitzenlose Schleifmaschine"
+        }
       ],
       "detailPage": true
     }
@@ -116,6 +185,23 @@
       "text": "Analyse der Strömungseigenschaften bei der Umströmung eines Adlers."
     }
   ],
+  "approach": {
+    "title": "Arbeitsweise",
+    "steps": [
+      {
+        "title": "Messen",
+        "text": "Versuchspläne, Energiebilanzen und Anlagendaten, vom Labor-Mikrowellentrockner bis zum Dachziegelwerk."
+      },
+      {
+        "title": "Modellieren",
+        "text": "CFD- und Multiphysik-Modelle in OpenFOAM, COMSOL Multiphysics, FDS und Fluent."
+      },
+      {
+        "title": "Verbessern",
+        "text": "Ergebnisse in Auslegungs- und Betriebsentscheidungen umsetzen: Abscheiderdesign, Ex-Zonen, Schleifparameter."
+      }
+    ]
+  },
   "experience": [
     {
       "role": "Wissenschaftlicher Mitarbeiter",
@@ -123,7 +209,9 @@
       "location": "Magdeburg",
       "start": "08/2024",
       "end": "10/2026",
-      "points": ["Energiebedarf von Mikrowellentrocknern im BMWK-geförderten IGF-Projekt."]
+      "points": [
+        "Energiebedarf von Mikrowellentrocknern im BMWK-geförderten IGF-Projekt."
+      ]
     },
     {
       "role": "Verfahrensingenieur",
@@ -131,7 +219,9 @@
       "location": "Groß Ammensleben",
       "start": "09/2022",
       "end": "07/2024",
-      "points": ["Betrieb von Tunnelöfen, Trocknungsanlagen und Dampferzeugern; Produktqualität +20 %, Durchlaufzeit −10 %."]
+      "points": [
+        "Betrieb von Tunnelöfen, Trocknungsanlagen und Dampferzeugern; Produktqualität +20 %, Durchlaufzeit −10 %."
+      ]
     },
     {
       "role": "Masterand (Masterarbeit)",
@@ -139,7 +229,9 @@
       "location": "Goslar",
       "start": "01/2022",
       "end": "08/2022",
-      "points": ["CFD-Modell eines Anodenwasserabscheiders für die PEM-Elektrolyse."]
+      "points": [
+        "CFD-Modell eines Anodenwasserabscheiders für die PEM-Elektrolyse."
+      ]
     },
     {
       "role": "Praktikant Verfahrenstechnik",
@@ -147,7 +239,9 @@
       "location": "Goslar",
       "start": "11/2021",
       "end": "12/2021",
-      "points": ["Simulation der Wasserstofffreisetzung zur Festlegung der Ex-Zonen."]
+      "points": [
+        "Simulation der Wasserstofffreisetzung zur Festlegung der Ex-Zonen."
+      ]
     },
     {
       "role": "Studentische Hilfskraft",
@@ -155,7 +249,9 @@
       "location": "Magdeburg",
       "start": "07/2021",
       "end": "09/2021",
-      "points": ["Validierung von CFD-Ergebnissen mit Versuchsdaten einer Miniplant."]
+      "points": [
+        "Validierung von CFD-Ergebnissen mit Versuchsdaten einer Miniplant."
+      ]
     },
     {
       "role": "Ingenieur-Trainee",
@@ -163,7 +259,9 @@
       "location": "Bengaluru, Indien",
       "start": "07/2018",
       "end": "03/2019",
-      "points": ["3D- und 2D-CAD-Konstruktion von Apparaten und OEM-Sondermaschinen (AutoCAD, SolidWorks)."]
+      "points": [
+        "3D- und 2D-CAD-Konstruktion von Apparaten und OEM-Sondermaschinen (AutoCAD, SolidWorks)."
+      ]
     },
     {
       "role": "Projektpraktikant",
@@ -171,7 +269,9 @@
       "location": "Bengaluru, Indien",
       "start": "01/2018",
       "end": "04/2018",
-      "points": ["Kürzere Bearbeitungszeit durch optimierte Schleifparameter."]
+      "points": [
+        "Kürzere Bearbeitungszeit durch optimierte Schleifparameter."
+      ]
     }
   ],
   "education": [
@@ -199,12 +299,65 @@
     }
   ],
   "skills": [
-    { "group": "Verfahrenstechnik", "items": ["Prozessoptimierung", "Prozesssimulation", "Prozesssicherheit", "CO2-Emissionsminderung", "Trocknungstechnik", "Mikrowellentrocknung", "Thermische Verfahren", "Prozessführung", "Wärmeübertrager"] },
-    { "group": "Simulation & CFD", "items": ["OpenFOAM (sehr gut)", "ANSYS CFX (gut)", "ANSYS Fluent (Grundkenntnisse)", "Star-CCM+ (gut)", "COMSOL Multiphysics (gut)", "ParaView (gut)", "Salome (Grundkenntnisse)"] },
-    { "group": "CAD", "items": ["SolidWorks (gut)", "AutoCAD (gut)", "Solid Edge (Grundkenntnisse)"] },
-    { "group": "Programmierung", "items": ["MATLAB (gut)", "VBA Excel (gut)", "Python (Grundkenntnisse)", "C (Grundkenntnisse)"] },
-    { "group": "Methoden", "items": ["Projektmanagement", "Lean Six Sigma", "Microsoft Office (sehr gut)"] },
-    { "group": "Sprachen", "items": ["Englisch (C1)", "Deutsch (B2)", "Kannada (Muttersprache)"] }
+    {
+      "group": "Verfahrenstechnik",
+      "items": [
+        "Prozessoptimierung",
+        "Prozesssimulation",
+        "Prozesssicherheit",
+        "CO2-Emissionsminderung",
+        "Trocknungstechnik",
+        "Mikrowellentrocknung",
+        "Thermische Verfahren",
+        "Prozessführung",
+        "Wärmeübertrager"
+      ]
+    },
+    {
+      "group": "Simulation & CFD",
+      "items": [
+        "OpenFOAM (sehr gut)",
+        "ANSYS CFX (gut)",
+        "ANSYS Fluent (Grundkenntnisse)",
+        "Star-CCM+ (gut)",
+        "COMSOL Multiphysics (gut)",
+        "ParaView (gut)",
+        "Salome (Grundkenntnisse)"
+      ]
+    },
+    {
+      "group": "CAD",
+      "items": [
+        "SolidWorks (gut)",
+        "AutoCAD (gut)",
+        "Solid Edge (Grundkenntnisse)"
+      ]
+    },
+    {
+      "group": "Programmierung",
+      "items": [
+        "MATLAB (gut)",
+        "VBA Excel (gut)",
+        "Python (Grundkenntnisse)",
+        "C (Grundkenntnisse)"
+      ]
+    },
+    {
+      "group": "Methoden",
+      "items": [
+        "Projektmanagement",
+        "Lean Six Sigma",
+        "Microsoft Office (sehr gut)"
+      ]
+    },
+    {
+      "group": "Sprachen",
+      "items": [
+        "Englisch (C1)",
+        "Deutsch (B2)",
+        "Kannada (Muttersprache)"
+      ]
+    }
   ],
   "certificates": [
     "Six Sigma Principles (Coursera, 09/2021)",

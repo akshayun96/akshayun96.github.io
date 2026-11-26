@@ -27,6 +27,8 @@ Change text there, not in the components. `npm run build` first runs `scripts/ch
 Notes:
 
 - **Projects:** 3–5 entries in `projects`. Keep `slug` identical in both files. `images` is a list (the first one is shown on the card, all of them on the detail page; an empty list gives a card without an image). Set `detailPage` to `true` to create `/en/projects/<slug>/`. `publication` is `{ "text", "url" }` or `null`. `smallProjects` are listed under the cards without images or detail pages.
+- **Hero:** `focus` is the highlighted box under the bio (each item links to a project's detail page by `slug`), `openTo` is the line under the CV buttons. `highlights` are the key-figure tiles under the hero; use only figures that are on your CV.
+- **How I work:** `approach.steps` are the three numbered tiles after the projects.
 - **Experience / education:** `end: null` shows "present" / "heute". Newest first. Education `notes` is a list of short lines.
 - **Contact:** set `github` to `null` to hide it.
 - **Legal notice / Impressum:** `legal` holds your name and email. Do not add a home address or phone number here.
