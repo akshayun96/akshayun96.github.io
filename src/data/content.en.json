@@ -40,7 +40,7 @@
     "name": "Akshay Ujjani Narasimhaiah",
     "role": "Process & Project Engineer: process optimization, thermal processes and CFD",
     "location": "Magdeburg, Germany",
-    "bio": "I'm a process engineer based in Magdeburg. For two years I ran tunnel kilns, drying plants and steam generators at a roof-tile plant. After that I spent two years at Otto-von-Guericke University Magdeburg researching how process control affects the energy demand of microwave dryers. I also build simulation models in OpenFOAM and COMSOL to answer practical plant questions about energy use, safety and throughput. I'm looking for a role in Germany in process engineering, plant engineering, project engineering or simulation. My first choice is the hydrogen and PEM electrolyzer industry, but I'm open to other sectors as well.",
+    "bio": "I'm a process engineer based in Magdeburg. For two years I ran tunnel kilns, drying plants and steam generators at a roof-tile plant. After that I spent two years at Otto-von-Guericke University Magdeburg researching how process control affects the energy demand of microwave dryers. I also build simulation models in OpenFOAM and COMSOL to answer practical plant questions about energy use, safety and throughput. I'm looking for a role in Germany in process engineering, plant engineering, project engineering or simulation, and I'm especially interested in hydrogen and PEM electrolysis.",
     "focus": {
       "label": "Hydrogen experience",
       "items": [
@@ -54,7 +54,7 @@
         }
       ]
     },
-    "openTo": "Open to: process, plant, project and simulation roles · Germany · hydrogen first, other sectors welcome",
+    "openTo": "Open to: process, plant, project and simulation roles · Germany · all process industries, including hydrogen",
     "headshot": {
       "src": "/images/headshot.jpg",
       "alt": "Portrait of Akshay Ujjani Narasimhaiah"

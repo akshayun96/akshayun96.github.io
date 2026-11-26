@@ -40,7 +40,7 @@
     "name": "Akshay Ujjani Narasimhaiah",
     "role": "Verfahrens- und Projektingenieur: Prozessoptimierung, thermische Verfahren und CFD",
     "location": "Magdeburg, Deutschland",
-    "bio": "Ich bin Verfahrensingenieur in Magdeburg. Zwei Jahre lang habe ich in einem Dachziegelwerk Tunnelöfen, Trocknungsanlagen und Dampferzeuger betreut. Danach habe ich zwei Jahre an der Otto-von-Guericke-Universität Magdeburg untersucht, wie die Prozessführung den Energiebedarf von Mikrowellentrocknern beeinflusst. Mit OpenFOAM und COMSOL erstelle ich Simulationsmodelle für praktische Fragen aus dem Anlagenbetrieb: Energiebedarf, Sicherheit und Durchsatz. Ich suche eine Stelle in Deutschland in der Verfahrenstechnik, im Anlagenbau, als Projektingenieur oder in der Simulation. Meine erste Wahl ist die Wasserstoff- und PEM-Elektrolyse-Branche, ich bin aber auch für andere Branchen offen.",
+    "bio": "Ich bin Verfahrensingenieur in Magdeburg. Zwei Jahre lang habe ich in einem Dachziegelwerk Tunnelöfen, Trocknungsanlagen und Dampferzeuger betreut. Danach habe ich zwei Jahre an der Otto-von-Guericke-Universität Magdeburg untersucht, wie die Prozessführung den Energiebedarf von Mikrowellentrocknern beeinflusst. Mit OpenFOAM und COMSOL erstelle ich Simulationsmodelle für praktische Fragen aus dem Anlagenbetrieb: Energiebedarf, Sicherheit und Durchsatz. Ich suche eine Stelle in Deutschland in der Verfahrenstechnik, im Anlagenbau, als Projektingenieur oder in der Simulation und interessiere mich besonders für Wasserstoff und PEM-Elektrolyse.",
     "focus": {
       "label": "Erfahrung mit Wasserstoff",
       "items": [
@@ -54,7 +54,7 @@
         }
       ]
     },
-    "openTo": "Offen für: Stellen in Verfahrenstechnik, Anlagenbau, Projektierung und Simulation · Deutschland · bevorzugt Wasserstoff, andere Branchen willkommen",
+    "openTo": "Offen für: Stellen in Verfahrenstechnik, Anlagenbau, Projektierung und Simulation · Deutschland · alle Prozessindustrien, auch Wasserstoff",
     "headshot": {
       "src": "/images/headshot.jpg",
       "alt": "Porträt von Akshay Ujjani Narasimhaiah"
