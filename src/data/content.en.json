@@ -1,8 +1,8 @@
 {
   "meta": {
     "lang": "en",
-    "title": "Akshay Ujjani Narasimhaiah – Process Engineer",
-    "description": "Process Engineer in Magdeburg, Germany: process optimization, thermal processes and CFD."
+    "title": "Akshay Ujjani Narasimhaiah – Process & Project Engineer",
+    "description": "Process & Project Engineer in Magdeburg, Germany: process optimization, thermal processes and CFD. Interested in hydrogen and PEM electrolysis."
   },
   "ui": {
     "skipToContent": "Skip to content",
@@ -37,9 +37,9 @@
   },
   "hero": {
     "name": "Akshay Ujjani Narasimhaiah",
-    "role": "Process Engineer: process optimization, thermal processes and CFD",
+    "role": "Process & Project Engineer: process optimization, thermal processes and CFD",
     "location": "Magdeburg, Germany",
-    "bio": "I'm a process engineer based in Magdeburg. For two years I ran tunnel kilns, drying plants and steam generators at a roof-tile plant. After that I spent two years at Otto-von-Guericke University Magdeburg researching how process control affects the energy demand of microwave dryers. I also build simulation models in OpenFOAM and COMSOL to answer practical plant questions about energy use, safety and throughput. I'm looking for a role in process engineering, plant engineering, project engineering or simulation in Germany.",
+    "bio": "I'm a process engineer based in Magdeburg. For two years I ran tunnel kilns, drying plants and steam generators at a roof-tile plant. After that I spent two years at Otto-von-Guericke University Magdeburg researching how process control affects the energy demand of microwave dryers. I also build simulation models in OpenFOAM and COMSOL to answer practical plant questions about energy use, safety and throughput. I'm looking for a role in process engineering, plant engineering, project engineering or simulation in Germany, ideally in the hydrogen and PEM electrolyzer industry.",
     "headshot": {
       "src": "/images/headshot.jpg",
       "alt": "Portrait of Akshay Ujjani Narasimhaiah"

@@ -1,8 +1,8 @@
 {
   "meta": {
     "lang": "de",
-    "title": "Akshay Ujjani Narasimhaiah – Verfahrensingenieur",
-    "description": "Verfahrensingenieur in Magdeburg, Deutschland: Prozessoptimierung, thermische Verfahren und CFD."
+    "title": "Akshay Ujjani Narasimhaiah – Verfahrens- und Projektingenieur",
+    "description": "Verfahrens- und Projektingenieur in Magdeburg, Deutschland: Prozessoptimierung, thermische Verfahren und CFD. Interesse an Wasserstoff und PEM-Elektrolyse."
   },
   "ui": {
     "skipToContent": "Zum Inhalt springen",
@@ -37,9 +37,9 @@
   },
   "hero": {
     "name": "Akshay Ujjani Narasimhaiah",
-    "role": "Verfahrensingenieur: Prozessoptimierung, thermische Verfahren und CFD",
+    "role": "Verfahrens- und Projektingenieur: Prozessoptimierung, thermische Verfahren und CFD",
     "location": "Magdeburg, Deutschland",
-    "bio": "Ich bin Verfahrensingenieur in Magdeburg. Zwei Jahre lang habe ich in einem Dachziegelwerk Tunnelöfen, Trocknungsanlagen und Dampferzeuger betreut. Danach habe ich zwei Jahre an der Otto-von-Guericke-Universität Magdeburg untersucht, wie die Prozessführung den Energiebedarf von Mikrowellentrocknern beeinflusst. Mit OpenFOAM und COMSOL erstelle ich Simulationsmodelle für praktische Fragen aus dem Anlagenbetrieb: Energiebedarf, Sicherheit und Durchsatz. Ich suche eine Stelle in der Verfahrenstechnik, im Anlagenbau, als Projektingenieur oder in der Simulation in Deutschland.",
+    "bio": "Ich bin Verfahrensingenieur in Magdeburg. Zwei Jahre lang habe ich in einem Dachziegelwerk Tunnelöfen, Trocknungsanlagen und Dampferzeuger betreut. Danach habe ich zwei Jahre an der Otto-von-Guericke-Universität Magdeburg untersucht, wie die Prozessführung den Energiebedarf von Mikrowellentrocknern beeinflusst. Mit OpenFOAM und COMSOL erstelle ich Simulationsmodelle für praktische Fragen aus dem Anlagenbetrieb: Energiebedarf, Sicherheit und Durchsatz. Ich suche eine Stelle in der Verfahrenstechnik, im Anlagenbau, als Projektingenieur oder in der Simulation in Deutschland, am liebsten in der Wasserstoff- und PEM-Elektrolyse-Branche.",
     "headshot": {
       "src": "/images/headshot.jpg",
       "alt": "Porträt von Akshay Ujjani Narasimhaiah"
