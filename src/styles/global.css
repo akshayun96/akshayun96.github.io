@@ -84,7 +84,7 @@ main section { padding-block: 4rem; border-bottom: 1px solid var(--border); }
 main section:last-child { border-bottom: 0; }
 
 /* Hero */
-.hero { display: grid; grid-template-columns: 1fr auto; gap: 2.5rem; align-items: center; padding-top: 5rem; }
+.hero { display: grid; grid-template-columns: 1fr auto; gap: 2.5rem; align-items: start; padding-top: 5rem; }
 .hero .role { font-size: 1.25rem; color: var(--accent); margin: 0 0 0.25rem; font-weight: 550; }
 .hero .location { margin: 0 0 1rem; }
 .hero .bio { max-width: 38rem; color: var(--muted); }
