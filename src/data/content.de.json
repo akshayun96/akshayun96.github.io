@@ -41,20 +41,7 @@
     "role": "Verfahrens- und Projektingenieur: Prozessoptimierung, thermische Verfahren und CFD",
     "location": "Magdeburg, Deutschland",
     "bio": "Ich bin Verfahrensingenieur in Magdeburg. Zwei Jahre lang habe ich in einem Dachziegelwerk Tunnelöfen, Trocknungsanlagen und Dampferzeuger betreut. Danach habe ich zwei Jahre an der Otto-von-Guericke-Universität Magdeburg untersucht, wie die Prozessführung den Energiebedarf von Mikrowellentrocknern beeinflusst. Mit OpenFOAM und COMSOL erstelle ich Simulationsmodelle für praktische Fragen aus dem Anlagenbetrieb: Energiebedarf, Sicherheit und Durchsatz. Ich suche eine Stelle in Deutschland in der Verfahrenstechnik, im Anlagenbau, als Projektingenieur oder in der Simulation.",
-    "focus": {
-      "label": "Erfahrung mit Wasserstoff",
-      "items": [
-        {
-          "text": "CFD eines Anodenwasserabscheiders für die PEM-Elektrolyse (Masterarbeit, FEST GmbH)",
-          "slug": "pem-separator"
-        },
-        {
-          "text": "Ex-Zonen-Simulation für eine Wasserstoff-Ausblaseleitung (Praktikum, FEST GmbH)",
-          "slug": "hydrogen-ex-zone"
-        }
-      ]
-    },
-    "openTo": "Offen für: Stellen in Verfahrenstechnik, Anlagenbau, Projektierung und Simulation · Deutschland · alle Prozessindustrien, auch Wasserstoff",
+    "openTo": "Offen für: Stellen in Verfahrenstechnik, Anlagenbau, Projektierung und Simulation · Deutschland · alle Prozessindustrien",
     "headshot": {
       "src": "/images/headshot.jpg",
       "alt": "Porträt von Akshay Ujjani Narasimhaiah"

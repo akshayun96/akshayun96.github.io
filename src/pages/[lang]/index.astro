@@ -15,12 +15,6 @@ const L = t.ui.projectLabels;
       <p class="role">{t.hero.role}</p>
       <p class="muted location">{t.hero.location}</p>
       <p class="bio">{t.hero.bio}</p>
-      <div class="focus">
-        <p class="focus-label">{t.hero.focus.label}</p>
-        <ul>
-          {t.hero.focus.items.map((f) => <li><a href={`/${lang}/projects/${f.slug}/`}>{f.text}</a></li>)}
-        </ul>
-      </div>
       <p class="actions">
         <a class="button" href={t.cv.own} download>{t.ui.downloadCv}</a>
         <a class="button secondary" href={t.cv.other} download>{t.ui.downloadCvOther}</a>

@@ -6,7 +6,6 @@
   --border: #e2e5ea;
   --accent: #1f5fbf; /* the one accent color; 6.0:1 on white */
   --accent-contrast: #ffffff;
-  --accent-tint: #eef3fb;
   --radius: 10px;
   --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
@@ -20,7 +19,6 @@
     --border: #2c3138;
     --accent: #7fb0ff;
     --accent-contrast: #0c1a30;
-    --accent-tint: #18243a;
   }
 }
 
@@ -88,9 +86,6 @@ main section:last-child { border-bottom: 0; }
 .hero .role { font-size: 1.25rem; color: var(--accent); margin: 0 0 0.25rem; font-weight: 550; }
 .hero .location { margin: 0 0 1rem; }
 .hero .bio { max-width: 38rem; color: var(--muted); }
-.focus { max-width: 38rem; margin-top: 1.25rem; padding: 0.75rem 1rem; border-left: 3px solid var(--accent); background: var(--accent-tint); border-radius: 0 var(--radius) var(--radius) 0; }
-.focus-label { margin: 0 0 0.25rem; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); }
-.focus ul { margin: 0; padding-left: 1.1rem; display: grid; gap: 0.2rem; }
 .open-to { margin: 0.75rem 0 0; font-size: 0.9rem; color: var(--muted); }
 .highlights { grid-column: 1 / -1; list-style: none; margin: 1rem 0 0; padding: 1.5rem 0 0; border-top: 1px solid var(--border); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 1.5rem; }
 .highlights strong { display: block; font-size: 1.6rem; line-height: 1.2; color: var(--accent); letter-spacing: -0.01em; }
