@@ -76,6 +76,33 @@
   ],
   "projects": [
     {
+      "slug": "microwave-drying",
+      "title": "Microwave drying of roof tiles (research project, OVGU)",
+      "problem": "Gas-fired convective dryers use a lot of energy. Microwave drying could cut energy use by 50% and lead time by 75%, but how the process is run decides how much of that is achieved.",
+      "whatIDid": "In a BMWK-funded IGF research project, I designed and ran the test plan for roof tiles and characterised the microwave dryer with impedance tuning, reflected-power measurements and energy balances. I formulated the drying model, built 3D electromagnetic and thermal simulations of the whole drying chamber in COMSOL Multiphysics, and coordinated the technical upgrade of the laboratory dryer with the project partner MFPA Weimar.",
+      "tools": [
+        "COMSOL Multiphysics",
+        "Energy balances",
+        "Laboratory measurement"
+      ],
+      "result": "Project report, results presented at one national and two international conferences, and one publication.",
+      "publication": {
+        "text": "Abstract in the Book of Abstracts of the 2nd International Workshop on Particle-Gas Systems (CRC 2025)",
+        "url": "http://dx.doi.org/10.25673/118928"
+      },
+      "images": [
+        {
+          "src": "/images/microwave-dryer.png",
+          "alt": "Schematic of the laboratory microwave dryer: drying chamber with turntable, sample and dimensions"
+        },
+        {
+          "src": "/images/roof-tile-sample.jpg",
+          "alt": "Roof-tile sample on the dryer turntable with fibre-optic temperature sensors"
+        }
+      ],
+      "detailPage": true
+    },
+    {
       "slug": "pem-separator",
       "title": "Anode water separator for PEM electrolysis (master thesis, FEST GmbH)",
       "problem": "Modular PEM electrolyzer systems need a separator vessel that reliably separates the oxygen from the water leaving the anode, in a vessel that is as compact as possible.",
@@ -120,33 +147,6 @@
         {
           "src": "/images/ex-zone-domain.png",
           "alt": "Simulation domain with the vent, meshed finer around the release"
-        }
-      ],
-      "detailPage": true
-    },
-    {
-      "slug": "microwave-drying",
-      "title": "Microwave drying of roof tiles (research project, OVGU)",
-      "problem": "Gas-fired convective dryers use a lot of energy. Microwave drying could cut energy use by 50% and lead time by 75%, but how the process is run decides how much of that is achieved.",
-      "whatIDid": "In a BMWK-funded IGF research project, I designed and ran the test plan for roof tiles and characterised the microwave dryer with impedance tuning, reflected-power measurements and energy balances. I formulated the drying model, built 3D electromagnetic and thermal simulations of the whole drying chamber in COMSOL Multiphysics, and coordinated the technical upgrade of the laboratory dryer with the project partner MFPA Weimar.",
-      "tools": [
-        "COMSOL Multiphysics",
-        "Energy balances",
-        "Laboratory measurement"
-      ],
-      "result": "Project report, results presented at one national and two international conferences, and one publication.",
-      "publication": {
-        "text": "Abstract in the Book of Abstracts of the 2nd International Workshop on Particle-Gas Systems (CRC 2025)",
-        "url": "http://dx.doi.org/10.25673/118928"
-      },
-      "images": [
-        {
-          "src": "/images/microwave-dryer.png",
-          "alt": "Schematic of the laboratory microwave dryer: drying chamber with turntable, sample and dimensions"
-        },
-        {
-          "src": "/images/roof-tile-sample.jpg",
-          "alt": "Roof-tile sample on the dryer turntable with fibre-optic temperature sensors"
         }
       ],
       "detailPage": true

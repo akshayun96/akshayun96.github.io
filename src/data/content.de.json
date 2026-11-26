@@ -76,6 +76,33 @@
   ],
   "projects": [
     {
+      "slug": "microwave-drying",
+      "title": "Mikrowellentrocknung von Dachziegeln (Forschungsprojekt, OVGU)",
+      "problem": "Gasbefeuerte Konvektionstrockner haben einen hohen Energiebedarf. Mikrowellentrocknung hat das Potenzial, den Energiebedarf um 50 % und die Durchlaufzeit um 75 % zu senken. Wie viel davon erreicht wird, hängt von der Prozessführung ab.",
+      "whatIDid": "Im BMWK-geförderten IGF-Projekt habe ich das Versuchsprogramm für Dachziegel geplant und durchgeführt und den Trockner mittels Impedanzanpassung, Reflexionsmessung und Energiebilanzen charakterisiert. Ich habe das Trocknungsmodell erstellt, elektromagnetische und thermische 3D-Simulationen der gesamten Trocknungskammer in COMSOL Multiphysics aufgebaut und die technische Modernisierung des Labortrockners in Abstimmung mit dem Projektpartner MFPA Weimar koordiniert.",
+      "tools": [
+        "COMSOL Multiphysics",
+        "Energiebilanzen",
+        "Labormesstechnik"
+      ],
+      "result": "Projektbericht, Ergebnisse auf drei Konferenzen (1 national, 2 international) und in einer Publikation.",
+      "publication": {
+        "text": "Kurzfassung im Book of Abstracts des 2nd International Workshop on Particle-Gas Systems (CRC 2025)",
+        "url": "http://dx.doi.org/10.25673/118928"
+      },
+      "images": [
+        {
+          "src": "/images/microwave-dryer.png",
+          "alt": "Schema des Labor-Mikrowellentrockners: Trocknungskammer mit Drehteller, Probe und Abmessungen"
+        },
+        {
+          "src": "/images/roof-tile-sample.jpg",
+          "alt": "Dachziegelprobe auf dem Drehteller des Trockners mit faseroptischen Temperatursensoren"
+        }
+      ],
+      "detailPage": true
+    },
+    {
       "slug": "pem-separator",
       "title": "Anodenwasserabscheider für die PEM-Elektrolyse (Masterarbeit, FEST GmbH)",
       "problem": "Modulare PEM-Elektrolysesysteme brauchen einen Abscheider, der Sauerstoff und Wasser am Anodenaustritt zuverlässig trennt, bei möglichst kompakter Bauform.",
@@ -120,33 +147,6 @@
         {
           "src": "/images/ex-zone-domain.png",
           "alt": "Simulationsgebiet mit Ausblaseöffnung, im Bereich der Freisetzung feiner vernetzt"
-        }
-      ],
-      "detailPage": true
-    },
-    {
-      "slug": "microwave-drying",
-      "title": "Mikrowellentrocknung von Dachziegeln (Forschungsprojekt, OVGU)",
-      "problem": "Gasbefeuerte Konvektionstrockner haben einen hohen Energiebedarf. Mikrowellentrocknung hat das Potenzial, den Energiebedarf um 50 % und die Durchlaufzeit um 75 % zu senken. Wie viel davon erreicht wird, hängt von der Prozessführung ab.",
-      "whatIDid": "Im BMWK-geförderten IGF-Projekt habe ich das Versuchsprogramm für Dachziegel geplant und durchgeführt und den Trockner mittels Impedanzanpassung, Reflexionsmessung und Energiebilanzen charakterisiert. Ich habe das Trocknungsmodell erstellt, elektromagnetische und thermische 3D-Simulationen der gesamten Trocknungskammer in COMSOL Multiphysics aufgebaut und die technische Modernisierung des Labortrockners in Abstimmung mit dem Projektpartner MFPA Weimar koordiniert.",
-      "tools": [
-        "COMSOL Multiphysics",
-        "Energiebilanzen",
-        "Labormesstechnik"
-      ],
-      "result": "Projektbericht, Ergebnisse auf drei Konferenzen (1 national, 2 international) und in einer Publikation.",
-      "publication": {
-        "text": "Kurzfassung im Book of Abstracts des 2nd International Workshop on Particle-Gas Systems (CRC 2025)",
-        "url": "http://dx.doi.org/10.25673/118928"
-      },
-      "images": [
-        {
-          "src": "/images/microwave-dryer.png",
-          "alt": "Schema des Labor-Mikrowellentrockners: Trocknungskammer mit Drehteller, Probe und Abmessungen"
-        },
-        {
-          "src": "/images/roof-tile-sample.jpg",
-          "alt": "Dachziegelprobe auf dem Drehteller des Trockners mit faseroptischen Temperatursensoren"
         }
       ],
       "detailPage": true
